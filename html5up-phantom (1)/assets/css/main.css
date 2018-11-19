@@ -151,7 +151,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #f2849e !important;
+			color: #9DD044 !important;
 		}
 
 	strong, b {
@@ -1840,8 +1840,8 @@ input, select, textarea {
 			}
 
 			.icon.style2:hover {
-				color: #f2849e;
-				border-color: #f2849e;
+				color: #9DD044;
+				border-color: #9DD044;
 			}
 
 			.icon.style2:active {
@@ -2473,8 +2473,8 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			color: #f2849e !important;
-			box-shadow: inset 0 0 0 2px #f2849e;
+			color: #9DD044 !important;
+			box-shadow: inset 0 0 0 2px #9DD044;
 		}
 
 		input[type="submit"]:active,
@@ -2516,7 +2516,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #f2849e;
+				background-color: #9DD044;
 			}
 
 			input[type="submit"].primary:active,
@@ -2573,6 +2573,7 @@ input, select, textarea {
 				position: relative;
 				display: block;
 				width: 100%;
+                height:100%;
 				border-radius: 4px;
 				overflow: hidden;
 			}
@@ -2821,6 +2822,7 @@ input, select, textarea {
 			text-decoration: none;
 			text-transform: uppercase;
 			display: inline-block;
+            /*width : 100%; !*로고 너비 헤더의 100*!*/
 		}
 
 			#header .logo > * {
@@ -2834,8 +2836,8 @@ input, select, textarea {
 
 				#header .logo .symbol img {
 					display: block;
-					width: 3em;
-					height: 3em;
+					width: 4em;
+					height: 4em;
 				}
 
 		#header nav {
