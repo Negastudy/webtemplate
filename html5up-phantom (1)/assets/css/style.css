@@ -104,7 +104,7 @@ img { max-width: 100%; }
 .top-content .description a:focus { border-bottom: 1px dotted #fff; }
 
 .form-box {
-	margin-top: 35px;
+	margin-top: 15px;
 }
 
 .form-top {
@@ -135,7 +135,7 @@ img { max-width: 100%; }
 .form-bottom {
 	padding: 25px 25px 30px 25px;
 	background: #eee;
-	-moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px;
+	-moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; border-radius: 4px 4px 4px 4px;
 	text-align: left;
 }
 
@@ -172,7 +172,7 @@ img { max-width: 100%; }
 
 @media (max-width: 767px) {
 	
-	.inner-bg { padding: 60px 0 110px 0; }
+	.inner-bg { padding: 90px 0 110px 0; }
 
 }
 
