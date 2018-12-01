@@ -2802,7 +2802,7 @@ input, select, textarea {
 
 				.tiles article {
 					width: 45%;
-					margin: 1.25em 1em 0 0;
+					margin: 1em 0.5em 0 0.5em;
 				}
 
 		}
@@ -3323,3 +3323,20 @@ input, select, textarea {
 			}
 
 		}
+	#search .search-box{
+		width:85%;
+		height:2.5em;
+		float:left;
+		margin : 0;
+		border:1px solid lightgray;
+		margin: 0.5em 0em 0 0em;
+	}
+
+	#search .search-but{
+		/*width : 10%;*/
+		/*height : 2.5em;*/
+		/*float : right;*/
+		/*margin : 0;*/
+		/*margin: 0.5em 0em 0 0em;*/
+
+	}
