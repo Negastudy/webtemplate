@@ -2583,6 +2583,10 @@ input, select, textarea {
 					display: block;
 					width: 100%;
 				}
+                /*타일 안의 이미지 높이 조절*/
+                .tiles article > .tile_img img{
+                    height : 8em;
+                }
 
 				.tiles article > .image:before {
 					pointer-events: none;
@@ -2685,30 +2689,35 @@ input, select, textarea {
 					.tiles article > a .content > :last-child {
 						margin-bottom: 0;
 					}
-
-			.tiles article.style1 > .image:before {
-				background-color: #f2849e;
-			}
+            .tiles article.style1 > .image:before {
+                        /*background-color: #9d9d9d;*/
+                        /*opacity: 0.6;*/
+                        background: #000000; background: rgba(0, 0, 0, 0.5);
+                    }
 
 			.tiles article.style2 > .image:before {
-				background-color: #7ecaf6;
+				/*background-color: #7ecaf6;*/
+                background: #000000; background: rgba(0, 0, 0, 0.5);
 			}
 
-			.tiles article.style3 > .image:before {
-				background-color: #7bd0c1;
-			}
+			/*.tiles article.style3 > .image:before {*/
+                /*background: #000000; background: rgba(0, 0, 0, 0.5);*/
+                /*!*background-color: #7bd0c1;*!*/
+			/*}*/
 
-			.tiles article.style4 > .image:before {
-				background-color: #c75b9b;
-			}
+			/*.tiles article.style4 > .image:before {*/
+                /*background: #000000; background: rgba(0, 0, 0, 0.5);*/
+                /*!*background-color: #c75b9b;*!*/
+			/*}*/
 
-			.tiles article.style5 > .image:before {
-				background-color: #ae85ca;
-			}
+			/*.tiles article.style5 > .image:before {*/
+                /*background: #000000; background: rgba(0, 0, 0, 0.5);*/
+				/*!*background-color: #ae85ca;*!*/
+			/*}*/
 
-			.tiles article.style6 > .image:before {
-				background-color: #8499e7;
-			}
+			/*.tiles article.style6 > .image:before {*/
+                /*background: #000000; background: rgba(0, 0, 0, 0.5);*/
+			/*}*/
 
 			body:not(.is-touch) .tiles article:hover > .image {
 				-moz-transform: scale(1.1);
@@ -2724,6 +2733,8 @@ input, select, textarea {
 
 				body:not(.is-touch) .tiles article:hover > .image:after {
 					opacity: 0;
+                    /*마우스클릭하면글씨 나타나게 하기*/
+                    /*opacity 1이 투명, 0 보이기*/
 				}
 
 			body:not(.is-touch) .tiles article:hover .content {
@@ -2798,12 +2809,13 @@ input, select, textarea {
 
 			.tiles {
 				margin: 0;
-				width:100%;
+                width :100%;
 			}
 
 				.tiles article {
 					width: 45%;
 					margin: 1em 0.5em 0 0.5em;
+                    height : 8em;
 				}
 
 		}
