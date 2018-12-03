@@ -82,7 +82,7 @@ img { max-width: 100%; }
 /***** Top content *****/
 
 .inner-bg {
-    padding: 100px 0 170px 0;
+    padding: 80px 0 80px 0;
 }
 
 .top-content .text {
@@ -135,7 +135,9 @@ img { max-width: 100%; }
 .form-bottom {
 	padding: 25px 25px 30px 25px;
 	background: #eee;
-	-moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; border-radius: 4px 4px 4px 4px;
+	-moz-border-radius: 0 0 4px 4px;
+	-webkit-border-radius: 0 0 4px 4px;
+	border-radius: 15px;
 	text-align: left;
 }
 
@@ -172,7 +174,7 @@ img { max-width: 100%; }
 
 @media (max-width: 767px) {
 	
-	.inner-bg { padding: 90px 0 110px 0; }
+	.inner-bg { padding: 80px 0 80px 0; }
 
 }
 
