@@ -6,14 +6,14 @@
 -->
 
 
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css-411">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <!------ Include the above in your HEAD tag ---------->
 
 
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css-400">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -30,8 +30,41 @@
 
 </head>
 
+<body>
+<div id="mypage-wrapper">
+	<header id="mypage-header">
+		<div class="inner">
 
-<hr>
+			<!-- Logo -->
+			<a href="index.html" class="logo">
+				<span class="symbol" >
+					<img src="../images/로고_전구.png" alt="" />
+				</span>
+				<span class="title" style="font-size: 1.3em">NEGASTUDY</span>
+			</a>
+
+			<!-- Nav -->
+			<nav>
+				<ul>
+					<li><a href="#menu">Menu</a></li>
+				</ul>
+			</nav>
+
+		</div>
+	</header>
+
+	<!-- Menu -->
+	<nav id="menu">
+		<h2>Menu</h2>
+		<ul>
+			<li><a href="index.html">홈 화면</a></li>
+			<!--<li><a href="../generic.html">즐겨찾기</a></li>-->
+			<!--<li><a href="../generic.html">나의 일정관리</a></li>-->
+			<li><a href="../generic.html">스터디 카페</a></li>
+			<li><a href="../My_Page/elements.html">마이 페이지</a></li>
+		</ul>
+	</nav>
+</div>
 <div class="container bootstrap snippet">
 	<div class="row">
 		<div class="col-sm-10"><h1>My Page</h1></div>
@@ -42,18 +75,19 @@
 				<br><br>
 				<img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" width="150px" height="150px" alt="avatar">
 				<input type="file" class="text-center center-block file-upload">
-			</div></hr><br><br>
+			</div>
 
+			<br><br>
 
+			<!--사용자 프로필-->
 			<div class="panel panel-default">
 				<div class="panel-heading">개인정보 <i class="fa fa-link fa-1x"></i></div>
 				<div class="panel-body"><a >김태근</a></div>
 				<div class="panel-body"><a >서강대학교</a></div>
 				<div class="panel-body"><a >cs20131544@gmail.com</a></div>
-
 			</div>
 
-
+			<!--사용자 스터디 목록-->
 			<ul class="list-group">
 				<li class="list-group-item text-muted">스터디 목록 <i class="fa fa-dashboard fa-1x"></i></li>
 				<li class="list-group-item text-right"><span class="pull-left"><strong>1</strong></span> 스터디 이름</li>
@@ -65,3 +99,5 @@
 		</div><!--/col-9-->
 	</div><!--/row-->
 </div>
+
+</body>
