@@ -15,11 +15,11 @@
 
 /* Header */
 
-#header {
+#mypage-header {
     padding: 8em 0 0.1em 0 ;
 }
 
-#header .logo {
+#mypage-header .logo {
     display: block;
     border-bottom: 0;
     color: inherit;
@@ -32,23 +32,23 @@
     /*width : 100%; !*로고 너비 헤더의 100*!*/
 }
 
-#header .logo > * {
+#mypage-header .logo > * {
     display: inline-block;
     vertical-align: middle;
 }
 
-#header .logo .symbol {
+#mypage-header .logo .symbol {
     margin-right: 0.65em;
 }
 
-#header .logo .symbol img {
+#mypage-header .logo .symbol img {
     display: block;
     width: 3em;
     height: 3em;
     margin-right: -0.8em;
 }
 
-#header nav {
+#mypage-header nav {
     position: fixed;
     right: 2em;
     top: 2em;
@@ -56,7 +56,7 @@
     padding: 0em 0 0.1em 0 ;
 }
 
-#header nav ul {
+#mypage-header nav ul {
     display: -moz-flex;
     display: -webkit-flex;
     display: -ms-flex;
@@ -70,12 +70,12 @@
     padding: 0;
 }
 
-#header nav ul li {
+#mypage-header nav ul li {
     display: block;
     padding: 0;
 }
 
-#header nav ul li a {
+#mypage-header nav ul li a {
     display: block;
     position: relative;
     height: 3em;
@@ -90,7 +90,7 @@
     text-transform: uppercase;
 }
 
-#header nav ul li a[href="#menu"] {
+#mypage-header nav ul li a[href="#menu"] {
     -webkit-tap-highlight-color: transparent;
     width: 4em;
     text-indent: 4em;
@@ -100,7 +100,7 @@
     white-space: nowrap;
 }
 
-#header nav ul li a[href="#menu"]:before, #header nav ul li a[href="#menu"]:after {
+#mypage-header nav ul li a[href="#menu"]:before, #mypage-header nav ul li a[href="#menu"]:after {
     -moz-transition: opacity 0.2s ease;
     -webkit-transition: opacity 0.2s ease;
     -ms-transition: opacity 0.2s ease;
@@ -117,27 +117,27 @@
     background-size: 2em 2em;
 }
 
-#header nav ul li a[href="#menu"]:before {
+#mypage-header nav ul li a[href="#menu"]:before {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23f2849e%3B %7D%3C/style%3E%3Cline x1='0' y1='25' x2='100' y2='25' /%3E%3Cline x1='0' y1='50' x2='100' y2='50' /%3E%3Cline x1='0' y1='75' x2='100' y2='75' /%3E%3C/svg%3E");
     opacity: 0;
 }
 
-#header nav ul li a[href="#menu"]:after {
+#mypage-header nav ul li a[href="#menu"]:after {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23585858%3B %7D%3C/style%3E%3Cline x1='0' y1='25' x2='100' y2='25' /%3E%3Cline x1='0' y1='50' x2='100' y2='50' /%3E%3Cline x1='0' y1='75' x2='100' y2='75' /%3E%3C/svg%3E");
     opacity: 1;
 }
 
-#header nav ul li a[href="#menu"]:hover:before {
+#mypage-header nav ul li a[href="#menu"]:hover:before {
     opacity: 1;
 }
 
-#header nav ul li a[href="#menu"]:hover:after {
+#mypage-header nav ul li a[href="#menu"]:hover:after {
     opacity: 0;
 }
 
 @media screen and (max-width: 736px) {
 
-    #header {
+    #mypage-header {
         position: fixed;
         width:100%;
         background-color: white;
@@ -145,12 +145,12 @@
         padding: 1em 0 0.1em 0 ;
     }
 
-    #header nav {
+    #mypage-header nav {
         right: 0.5em;
         top: 0.5em;
     }
 
-    #header nav ul li a[href="#menu"]:before, #header nav ul li a[href="#menu"]:after {
+    #mypage-header nav ul li a[href="#menu"]:before, #mypage-header nav ul li a[href="#menu"]:after {
         background-size: 1.5em 1.5em;
     }
 
@@ -340,4 +340,9 @@ body.is-menu-visible #menu .close {
     -ms-transform: scale(1.0) rotate(0deg);
     transform: scale(1.0) rotate(0deg);
     opacity: 1;
+}
+
+/*프로필 사진 선택 버튼*/
+.userphoto{
+    background-color: #fff;
 }
