@@ -159,6 +159,7 @@
 /* Menu */
 
 #mypage-wrapper {
+    width:100%;
     -moz-transition: opacity 0.45s ease;
     -webkit-transition: opacity 0.45s ease;
     -ms-transition: opacity 0.45s ease;
