@@ -1,20 +1,41 @@
-
-
-
 .st-category {
     /*font-size: 20px;*/
     /*font-weight:900;*/
     color: #9DD044;
     margin-bottom: 10px;
+    margin-left:15px;
+}
+.st-name{
+    margin-left:10px;
+
+
+
 }
 .st-day {
     /*font-size: 20px;*/
     /*font-weight:900;*/
     /*color: #9DD044;*/
     /*margin-bottom: 10px;*/
-    margin-top:70px;
+    margin-top:10px;
     margin-bottom:10px;
 }
+.st-people {
+
+}
+.st-profile {
+    margin-top:30px;
+    margin-bottom:10px;
+    margin-left:15px;
+}
+.st-profile-img {
+    /* class로 세팅하면 이미지 각각을 동그랗게 만드는거가 안됨 ㅜㅜ -> html 각 이미지마다 넣어야 되나봄*/
+    /*margin-left:5px;*/
+    /*border: 1px solid darkgrey;*/
+    /*border-radius: 15px;*/
+    /*-moz-border-radius: 15px;*/
+    /*-webkit-border-radius: 100px;*/
+}
+
 .st-speaker{
     margin-top:0px;
 }
