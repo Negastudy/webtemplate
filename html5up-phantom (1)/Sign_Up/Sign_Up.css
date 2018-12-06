@@ -70,6 +70,58 @@ body {
 	padding: 10px 5px;
 	margin: 10px 5px;
 }
+#msform .email-send{
+	width: 20px;
+	background:  #F2F2F2;
+	font-weight: 100;
+	color: grey;
+	border: 0 none;
+	/*border-radius: 100%;*/
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+	margin-top:-1px;
+	font-family: montserrat;
+}
+#msform .email-check{
+	width: 20px;
+	background:  #F2F2F2;
+	font-weight: 100;
+	color: grey;
+	border: 0 none;
+	/*border-radius: 100%;*/
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+	margin-top:-1px;
+	font-family: montserrat;
+}
+
+/*#msform .email-send-school{*/
+	/*width: 20px;*/
+	/*background: #9DD044;*/
+	/*font-weight: bold;*/
+	/*color: white;*/
+	/*border: 0 none;*/
+	/*border-radius: 10px;*/
+	/*cursor: pointer;*/
+	/*padding: 10px 5px;*/
+	/*margin: 10px 5px;*/
+	/*margin-top:-1px;*/
+/*}*/
+/*#msform .email-check-school{*/
+	/*width: 20px;*/
+	/*background: #9DD044;*/
+	/*font-weight: bold;*/
+	/*color: white;*/
+	/*border: 0 none;*/
+	/*border-radius: 10px;*/
+	/*cursor: pointer;*/
+	/*padding: 10px 5px;*/
+	/*margin: 10px 5px;*/
+	/*margin-top:-1px;*/
+
+/*}*/
 #msform .action-button:hover, #msform .action-button:focus {
 	box-shadow: 0 0 0 2px white, 0 0 0 3px #9DD044;
 }
@@ -83,9 +135,23 @@ body {
 }
 .fs-subtitle {
 	font-weight: normal;
-	font-size: 14px;
+	font-size: 15px;
 	color: #666;
 	margin-bottom: 20px;
+}
+.fs-subtitle-general{
+	font-weight: normal;
+	font-size: 14px;
+	color: #666;
+	margin-left:-20px;
+	margin-top:10px;
+}
+.fs-subtitle-school{
+	font-weight: normal;
+	font-size: 14px;
+	color: #666;
+	margin-top:0px;
+	margin-left:-20px;
 }
 /*progressbar*/
 #progressbar {
