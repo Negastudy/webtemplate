@@ -70,6 +70,55 @@ body {
 	padding: 10px 5px;
 	margin: 10px 5px;
 }
+#msform .email-send{
+	width: 20px;
+	background: #9DD044;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 10px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+	margin-top:-1px;
+}
+#msform .email-send-school{
+	width: 20px;
+	background: #9DD044;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 10px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+	margin-top:-1px;
+}
+#msform .email-check{
+	width: 20px;
+	background: #9DD044;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 10px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+	margin-top:-1px;
+}
+#msform .email-check-school{
+	width: 20px;
+	background: #9DD044;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 10px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+	margin-top:-1px;
+
+}
 #msform .action-button:hover, #msform .action-button:focus {
 	box-shadow: 0 0 0 2px white, 0 0 0 3px #9DD044;
 }
