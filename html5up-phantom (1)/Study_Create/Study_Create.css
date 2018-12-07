@@ -1,3 +1,18 @@
+@import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+.formm {
+    padding: 15px 2px 2px 0px;
+    background: #eee;
+    -moz-border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    border-radius: 21px;
+    text-align: left;
+    height: 510px;
+}
+
+h1{
+    font-family: 'Noto Sans KR', sans-serif;;
+    font-family: 'Jeju Gothic', sans-serif;
+}
 #create-wrapper > * > .inner {
     width: 100%;
     max-width: 68em;
@@ -14,7 +29,6 @@
 }
 
 /* Header */
-
 #create-header {
     padding: 8em 0 0.1em 0 ;
 }
@@ -300,25 +314,109 @@ body.is-menu-visible #menu .close {
     transform: scale(1.0) rotate(0deg);
     opacity: 1;
 }
-
+.btn1 {
+    margin-left: 100px;
+    margin-top: 25px;
+    -moz-box-shadow:inset 0px 1px 0px 0px #c1ed9c;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #c1ed9c;
+    box-shadow:inset 0px 1px 0px 0px #c1ed9c;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c5e37f), color-stop(1, #8cb82b) );
+    /*background:-moz-linear-gradient( center top, #c5e37f 5%, #8cb82b 100% );*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c5e37f', endColorstr='#8cb82b');
+    background-color:#c5e37f;
+    -webkit-border-top-left-radius:27px;
+    -moz-border-radius-topleft:27px;
+    border-top-left-radius:27px;
+    -webkit-border-top-right-radius:27px;
+    -moz-border-radius-topright:27px;
+    border-top-right-radius:27px;
+    -webkit-border-bottom-right-radius:27px;
+    -moz-border-radius-bottomright:27px;
+    border-bottom-right-radius:27px;
+    -webkit-border-bottom-left-radius:27px;
+    -moz-border-radius-bottomleft:27px;
+    border-bottom-left-radius:27px;
+    text-indent:1px;
+    border:1px solid #83c41a;
+    display:inline-block;
+    color:#ffffff;
+    font-family:Trebuchet MS;
+    font-size:14px;
+    font-weight:bold;
+    font-style:normal;
+    height:35px;
+    line-height:35px;
+    width:67px;
+    text-decoration:none;
+    text-align:center;
+    text-shadow:1px 1px 0px #689324;
+}
+.btn1:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #8cb82b), color-stop(1, #c5e37f) );
+    /*background:-moz-linear-gradient( center top, #8cb82b 5%, #c5e37f 100% );*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#8cb82b', endColorstr='#c5e37f');
+    background-color:#8cb82b;
+}.btn1:active {
+     position:relative;
+     top:1px;
+ }
+.btn2 {
+    margin-left:10px;
+    -moz-box-shadow:inset 0px 1px 0px 0px #c1ed9c;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #c1ed9c;
+    box-shadow:inset 0px 1px 0px 0px #c1ed9c;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c5e37f), color-stop(1, #8cb82b) );
+    /*background:-moz-linear-gradient( center top, #c5e37f 5%, #8cb82b 100% );*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c5e37f', endColorstr='#8cb82b');
+    background-color:#c5e37f;
+    -webkit-border-top-left-radius:27px;
+    -moz-border-radius-topleft:27px;
+    border-top-left-radius:27px;
+    -webkit-border-top-right-radius:27px;
+    -moz-border-radius-topright:27px;
+    border-top-right-radius:27px;
+    -webkit-border-bottom-right-radius:27px;
+    -moz-border-radius-bottomright:27px;
+    border-bottom-right-radius:27px;
+    -webkit-border-bottom-left-radius:27px;
+    -moz-border-radius-bottomleft:27px;
+    border-bottom-left-radius:27px;
+    text-indent:1px;
+    border:1px solid #83c41a;
+    display:inline-block;
+    color:#ffffff;
+    font-family:Trebuchet MS;
+    font-size:14px;
+    font-weight:bold;
+    font-style:normal;
+    height:35px;
+    line-height:35px;
+    width:67px;
+    text-decoration:none;
+    text-align:center;
+    text-shadow:1px 1px 0px #689324;
+}
 .btnbtn1{
-    background-color: #9dd044;
-    border:none;
-    border-radius: 5px;
-    width : 5em;
-    height:3em;
+    background-color: #DDFFAA;
+    border-color: grey;
+    /*border:none;*/
+    border-radius: 10px;
+    width : 6.5em;
+    height:4em;
     margin-top:1em;
     margin-left:6em;
 }
 
 .btnbtn2{
-    background-color: #9dd044;
-    border:none;
-    border-radius: 5px;
-    width : 5em;
-    height:3em;
-    margin-top:1em;
-    margin-right:5em;
+    background-color: #DDFFAA;
+    border-color: grey;
+    /*border:none;*/
+    border-radius: 10px;
+    width : 6.5em;
+    height:4em;
+    margin-top:-1em;
+    margin-right:-2em;
+    margin-left:10px;
 
 }
 
@@ -352,3 +450,4 @@ body.is-menu-visible #menu .close {
     margin-right: -0.8em;
     /*margin-bottom: -4em;*/
 }
+
