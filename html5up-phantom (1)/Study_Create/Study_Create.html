@@ -5,26 +5,52 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <title>NegaStudy</title>
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <!--  CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="Study_Create.css">
     <!--  JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
 
+<div id="create-wrapper">
+    <header id="create-header">
+        <div class="inner">
+
+            <!-- Logo -->
+            <a href="../home/home.html" class="logo">
+				<span class="symbol" >
+					<img src="../images/로고_전구.png" alt="" />
+				</span>
+                <span class="title" style="font-size: 1.3em; color: #585858;">NEGASTUDY</span>
+            </a>
+
+            <!-- Nav -->
+            <a href="../My_Page/mypage.html" class="mypage-icon">
+				<span class="mypage-icon-but">
+					<img src="../images/mypage_icon.png" style="width:2.5em; height:2em"/>
+
+				</span>
+            </a>
+
+        </div>
+    </header>
+
+</div>
 
 
-<div class="container">
-    <table class="table table-bordered">
+
+<div class="container" style=" height:50em">
+    <table class="table table-bordered" style="margin-top:10em; height:29em">
         <thead >
-        <caption style="text-align:center;"> 스터디 생성하기 </caption>
+        <!--<caption style="text-align:center;"> 스터디 생성하기 </caption>-->
         </thead>
-        <tbody>
+        <tbody style="background-color: #ffff; height:20em; border: 2px solid #9dd044">
 
         <form  method="post" encType="multiplart/form-data">
             <tr>
@@ -79,8 +105,8 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <input type="button" value="등록" onclick="sendData()" class="pull-right"/>
-                    <input type="button" value="삭제" class="pull-right" onclick=""/>
+                    <input type="button" value="등록" onclick="sendData()" class=" btnbtn1"/>
+                    <input type="button" value="삭제" class=" btnbtn2" onclick=""/>
                     <!-- <a class="btn btn-default" onclick="sendData()"> 등록 </a>
                     <a class="btn btn-default" onclick="javascript:location.href='list.jsp'">글 목록으로...</a> -->
                 </td>
