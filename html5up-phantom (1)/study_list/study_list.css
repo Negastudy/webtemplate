@@ -1,4 +1,4 @@
-#mypage-wrapper > * > .inner {
+#studylist-wrapper > * > .inner {
     width: 100%;
     max-width: 68em;
     margin: 0 auto;
@@ -7,7 +7,7 @@
 
 @media screen and (max-width: 736px) {
 
-    #mypage-wrapper > * > .inner {
+    #studylist-wrapper > * > .inner {
         padding: 0 1.25em;
     }
 
@@ -15,11 +15,11 @@
 
 /* Header */
 
-#mypage-header {
+#studylist-header {
     padding: 8em 0 0.1em 0 ;
 }
 
-#mypage-header .logo {
+#studylist-header .logo {
     display: block;
     border-bottom: 0;
     color: inherit;
@@ -32,23 +32,23 @@
     /*width : 100%; !*로고 너비 헤더의 100*!*/
 }
 
-#mypage-header .logo > * {
+#studylist-header .logo > * {
     display: inline-block;
     vertical-align: middle;
 }
 
-#mypage-header .logo .symbol {
+#studylist-header .logo .symbol {
     margin-right: 0.65em;
 }
 
-#mypage-header .logo .symbol img {
+#studylist-header .logo .symbol img {
     display: block;
     width: 3em;
     height: 3em;
     margin-right: -0.8em;
 }
 
-#mypage-header nav {
+#studylist-header nav {
     position: fixed;
     right: 2em;
     top: 2em;
@@ -56,7 +56,7 @@
     padding: 0em 0 0.1em 0 ;
 }
 
-#mypage-header nav ul {
+#studylist-header nav ul {
     display: -moz-flex;
     display: -webkit-flex;
     display: -ms-flex;
@@ -70,12 +70,12 @@
     padding: 0;
 }
 
-#mypage-header nav ul li {
+#studylist-header nav ul li {
     display: block;
     padding: 0;
 }
 
-#mypage-header nav ul li a {
+#studylist-header nav ul li a {
     display: block;
     position: relative;
     height: 3em;
@@ -95,7 +95,7 @@
 
 @media screen and (max-width: 736px) {
 
-    #mypage-header {
+    #studylist-header {
         position: fixed;
         width:100%;
         background-color: white;
@@ -103,12 +103,12 @@
         padding: 1em 0 0.1em 0 ;
     }
 
-    #mypage-header nav {
+    #studylist-header nav {
         right: 0.5em;
         top: 0.5em;
     }
 
-    #mypage-header nav ul li a[href="#menu"]:before, #mypage-header nav ul li a[href="#menu"]:after {
+    #studylist-header nav ul li a[href="#menu"]:before, #studylist-header nav ul li a[href="#menu"]:after {
         background-size: 1.5em 1.5em;
     }
 
@@ -116,7 +116,7 @@
 
 /* Menu */
 
-#mypage-wrapper {
+#studylist-wrapper {
     width:100%;
     -moz-transition: opacity 0.45s ease;
     -webkit-transition: opacity 0.45s ease;
@@ -275,7 +275,7 @@
 
 }
 
-body.is-menu-visible #mypage-wrapper {
+body.is-menu-visible #studylist-wrapper {
     pointer-events: none;
     cursor: default;
     opacity: 0.25;
@@ -306,7 +306,7 @@ body.is-menu-visible #menu .close {
     background-color: #fff;
 }
 
-#mypage-header .mypage-icon {
+#studylist-header .mypage-icon {
     display: block;
     border-bottom: 0;
     color: inherit;
@@ -319,33 +319,33 @@ body.is-menu-visible #menu .close {
     /*width : 100%; !*로고 너비 헤더의 100*!*/
 }
 
-#mypage-header .mypage-icon > * {
+#studylist-header .mypage-icon > * {
     display: inline-block;
     vertical-align: middle;
 }
 
-#mypage-header .mypage-icon .mypage-icon-but {
+#studylist-header .mypage-icon .mypage-icon-but {
     /*margin-right: 0.65em;*/
     margin-left: 5em;
 }
 
-#mypage-header .mypage-icon .mypage-icon-but img {
+#studylist-header .mypage-icon .mypage-icon-but img {
     display: block;
     width: 100%;
     height: 100%;
     margin-right: -0.8em;
     /*margin-bottom: -4em;*/
 }
-#mypage-main {
+#studylist-main {
 }
-#mypage-main .mypage-profile{
+#studylist-main .mypage-profile{
     width: 100%;
     height : 10em;
     margin-top: 2em;
     border: 1px solid #9DD044;
     border-radius : 5px;
 }
-#mypage-main .mypage-profile-img{
+#studylist-main .mypage-profile-img{
     width : 30%;
     height : inherit;
     float:left;
@@ -354,34 +354,66 @@ body.is-menu-visible #menu .close {
     border-right : 1px solid #9dd044;
     background-color: #9dd044;
 }
-#mypage-main .mypage-profile-img img{
+#studylist-main .mypage-profile-img img{
     width :6.5em;
     height :6.5em;
     margin:0;
 }
 
-#mypage-main .mypage-profile-content {
+.list-background{
+    width:100%;
+    height:100%;
+    padding-top:10px;
+}
+
+.list-box{
+    background-color: #ffff;
+    width:100%;
+    height: 5em;
+    margin:1em 0;
+    padding : 1em 0 1em 1em;
+}
+
+.list-box-content{
+    width:70%;
+    /*height:inherit;*/
+    float:left;
+    color :black;
+    font-size: 15px;
+}
+
+.list-box-click img{
+    width:10%;
+    height:100%;
+    float:right;
+    padding-top:0.5em;
+}
+
+#studylist-search{
+    margin-top: -4.5em;
     width: 100%;
-    height: inherit;
-    padding: 1em 0 0 6.5em;
+    height: 4.3em;
+    background-color: white;
 }
 
-#mypage-main .mypage-profile-content li{
-    margin : 0.5em 0;
+#studylist-search .search-box{
+    width:85%;
+    height:3em;
+    float:left;
+    border:1px solid lightgray;
+    margin: 0.5em 0em 0 0em;
+    padding-left: 0.5em;
 }
 
-#mypage-main .mypage-profile-edit{
-    width: 4em;
-    height: 2em;
-    background-color: #9dd044;
+#studylist-search .search-but{
+    width : 15%;
+    height : 3em;
+    float : right;
+    border:1px solid lightgray;
     box-shadow: none;
-    border-radius: 5px;
-    z-index: 200;
-    float: right;
-    margin-top: -3em;
-    margin-right: 0.5em;
+    margin: 0.5em 0em 0 0em;
     padding : 0;
-    font-size: 13px;
-    font-weight: 800;
+    border-radius: 4px  ;
 
 }
+

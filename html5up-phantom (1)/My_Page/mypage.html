@@ -45,61 +45,91 @@
 			</a>
 
 			<!-- Nav -->
-			<nav>
-				<ul>
-					<li><a href="#menu">Menu</a></li>
-				</ul>
-			</nav>
+            <a href="../My_Page/mypage.html" class="mypage-icon">
+				<span class="mypage-icon-but">
+					<img src="../images/mypage_icon.png" style="width:2.5em; height:2em"/>
+
+				</span>
+            </a>
 
 		</div>
 	</header>
 
-	<!-- Menu -->
-	<nav id="menu">
-		<h2>Menu</h2>
-		<ul>
-			<li><a href="../home/home.html">홈 화면</a></li>
-			<!--<li><a href="../generic.html">즐겨찾기</a></li>-->
-			<!--<li><a href="../generic.html">나의 일정관리</a></li>-->
-			<li><a href="../generic.html">스터디 카페</a></li>
-			<li><a href="../My_Page/mypage.html">마이 페이지</a></li>
-		</ul>
-	</nav>
 </div>
 
 
 <!--main-->
-<div class="container bootstrap snippet">
+<div id="mypage-main"class="container bootstrap snippet">
 	<!--<div class="row">-->
 		<!--<div class="col-sm-10"><h1>My Page</h1></div>-->
 	<!--</div>-->
 	<div class="row">
 		<div class="col-sm-3" style="margin-top:4em"><!--left col-->
-			<div class="text-center">
-				<br><br>
-				<img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" width="150px" height="150px" alt="avatar">
-				<input type="file" name="userphoto" id="userphoto" class="userphoto text-center center-block file-upload">
+			<!--개인정보-->
+            <div class="mypage-profile">
+                <div class="mypage-profile-img">
+                    <img src="../images/mypage-user.png">
+                </div>
+                <div class="mypage-profile-content">
+                    <ul style="list-style-type: none">
+                        <!--개인정보 변경시에 input tag-->
+                        <li>{{ data.username }}</li>
+                        <li>{{ data.userid }}</li>
+                        <!--비밀번호는 별처리해서 그냥 텍스트로-->
+                        <li>{{ data.password }}</li>
+                        <li>{{ data.useremail }}</li>
+                    </ul>
+                </div>
+                <!--개인 정보 변경 버튼-->
+                <button class="mypage-profile-edit">
+                    <span style="color:white">변경</span></button>
 			</div>
 
-			<br><br>
-
+            <br>
 			<!--사용자 프로필-->
-			<div class="panel panel-default">
-				<div class="panel-heading" style="background-color : #9DD044">개인정보<i class="fa fa-link fa-1x"></i></div>
-				<div class="panel-body"><a > {{ username }} </a></div>
-				<div class="panel-body"><a > {% userschool %} </a></div>
-				<div class="panel-body"><a > {%useremail%} </a></div>
-			</div>
+			<!--<div class="panel panel-default">-->
+				<!--<div class="panel-heading" style="background-color : #9DD044">진행 중 스터디</div>-->
+				<!--<div class="panel-body"><a > {{ username }} </a></div>-->
+				<!--<div class="panel-body"><a > {{ user id }} </a></div>-->
+				<!--<div class="panel-body"><a > {{ useremail } </a></div>-->
+			<!--</div>-->
 
-			<!--사용자 스터디 목록 - 반복으로 출력 -->
+			<!--진행 중인 스터디-->
+            <!--li 클릭하면 스터디 상세 화면으로 이동 ** 데이터 가져가야함 -->
 			<ul class="list-group">
-				<li class="list-group-item text-muted"> 스터디 목록 <i class="fa fa-dashboard fa-1x"></i></li>
-				<li class="list-group-item text-right"><span class="pull-left"><strong>1</strong></span> 스터디 이름</li>
-				<li class="list-group-item text-right"><span class="pull-left"><strong>2</strong></span>스터디 이름</li>
-				<li class="list-group-item text-right"><span class="pull-left"><strong>3</strong></span>스터디 이름</li>
-				<li class="list-group-item text-right"><span class="pull-left"><strong>4</strong></span>스터디 이름</li>
+				<li onclick=" " class="list-group-item text-muted" style="background-color: #9dd044; border:none">
+                    <strong>진행 중 스터디</strong> </li>
+				<li class="list-group-item text-right"><span class="pull-left">
+                    <strong>{{스터디 이름}}</strong></span>
+                    <strong> > </strong>
+                </li>
+				<li class="list-group-item text-right"><span class="pull-left">
+                    <strong>{{스터디 이름}}</strong></span>
+                    <strong> > </strong></li>
+				<li class="list-group-item text-right"><span class="pull-left">
+                    <strong>{{스터디 이름}}</strong></span>
+                    <strong> > </strong>
+                </li>
+
 			</ul>
 
+            <!--완료된 스터디-->
+            <ul class="list-group">
+                <li class="list-group-item text-muted" style="background-color: lightgray">
+                    <strong>완료 된 스터디</strong> </li>
+                <li class="list-group-item text-right"><span class="pull-left">
+                    <strong>{{스터디 이름}}</strong></span>
+                    <strong> > </strong>
+                </li>
+                <li class="list-group-item text-right"><span class="pull-left">
+                    <strong>{{스터디 이름}}</strong></span>
+                    <strong> > </strong></li>
+                <li class="list-group-item text-right"><span class="pull-left">
+                    <strong>{{스터디 이름}}</strong></span>
+                    <strong> > </strong>
+                </li>
+
+            </ul>
 		</div><!--/col-9-->
 	</div><!--/row-->
 </div>

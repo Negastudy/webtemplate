@@ -29,27 +29,17 @@
 				<span class="title" style="font-size: 1.3em">NEGASTUDY</span>
 			</a>
 
-			<!-- Nav -->
-			<nav>
-				<ul>
-					<li><a href="#menu">Menu</a></li>
-				</ul>
-			</nav>
+			<!--my page-->
+			<a href="../My_Page/mypage.html" class="mypage-icon">
+				<span class="mypage-icon-but">
+					<img src="../images/mypage_icon.png" style="width:2.5em; height:2em"/>
+
+				</span>
+			</a>
 
 		</div>
 	</header>
 
-	<!-- Menu -->
-	<nav id="menu">
-		<h2>Menu</h2>
-		<ul>
-			<li><a href="home.html">홈 화면</a></li>
-			<!--<li><a href="../generic.html">즐겨찾기</a></li>-->
-			<!--<li><a href="../generic.html">나의 일정관리</a></li>-->
-			<li><a href="../generic.html">스터디 카페</a></li>
-			<li><a href="../My_Page/mypage.html">마이 페이지</a></li>
-		</ul>
-	</nav>
 
 	<!-- Main -->
 	<div id="main">
@@ -65,12 +55,22 @@
 			</header>
 
 			<section class="tiles">
+				<div class="home-myinfo">
+					<ul class="home-ul" style="margin-bottom : 0em">
+						<li><img src="../images/main-alarm.png" style="width:1.2em; height:1em; margin-bottom: -2px;">
+							{{ 진행 중 스터디의 가장최근 일정}}</li>
+						<li><img src="../images/main-alarm.png" style="width:1.2em; height:1em; margin-bottom: -2px">
+							{{ 진행 중 스터디의 가장최근 일정}}</li>
+
+					</ul>
+				</div>
+                <!--만약 학교 이메일 인증한 학생이면 보이기 if 문-->
 				<article class="style1" style="width:100%">
 					<span class="image tile_img">
 						<img src="../images/main_study.jpg"  alt="" />
 					</span>
 					<a href="">
-						<h2>#어학</h2>
+						<h2>#{{ 대학교 이름 }}</h2>
 						<!--클릭해서 설명보이게 하고 싶을 경우 넣는 content-->
 						<!--<div class="content">-->
 							<!--<p>어학 관련 스터디</p>-->
@@ -82,7 +82,7 @@
 										<img src="../images/main_img_samsung.png"  alt="" />
 									</span>
 					<a href="">
-						<h2>#삼성전자_면접</h2>
+						<h2>{{스터디 카테고리}}</h2>
 					</a>
 				</article>
 				<article class="style2">
@@ -90,7 +90,7 @@
 										<img src="../images/main_omr.jpg" alt="" />
 									</span>
 					<a href="">
-						<h2>#인적성_NCS</h2>
+						<h2>{{스터디 카테고리}}</h2>
 
 					</a>
 				</article>
@@ -99,7 +99,7 @@
 										<img src="../images/main_interview.jpg" alt="" />
 									</span>
 					<a href="">
-						<h2>#임원 면접 꿀팁</h2>
+						<h2>{{스터디 카테고리}}</h2>
 
 					</a>
 				</article>
@@ -108,7 +108,25 @@
 										<img src="../images/main_test.jpg" alt="" />
 									</span>
 					<a href="">
-						<h2>#GSAT 뽀개기</h2>
+						<h2>{{스터디 카테고리}}</h2>
+
+					</a>
+				</article>
+				<article class="style2">
+									<span class="image tile_img">
+										<img src="../images/main_interview.jpg" alt="" />
+									</span>
+					<a href="">
+						<h2>{{스터디 카테고리}}</h2>
+
+					</a>
+				</article>
+				<article class="style2">
+									<span class="image tile_img">
+										<img src="../images/main_interview.jpg" alt="" />
+									</span>
+					<a href="">
+						<h2>{{스터디 카테고리}}</h2>
 
 					</a>
 				</article>
