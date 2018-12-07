@@ -371,6 +371,22 @@ body.is-menu-visible #menu .close {
     width:100%;
     height: 5em;
     margin:1em 0;
+    padding : 1em 0 1em 1em;
+}
+
+.list-box-content{
+    width:70%;
+    /*height:inherit;*/
+    float:left;
+    color :black;
+    font-size: 15px;
+}
+
+.list-box-click img{
+    width:10%;
+    height:100%;
+    float:right;
+    padding-top:0.5em;
 }
 
 #studylist-search{
@@ -400,3 +416,4 @@ body.is-menu-visible #menu .close {
     border-radius: 4px  ;
 
 }
+
