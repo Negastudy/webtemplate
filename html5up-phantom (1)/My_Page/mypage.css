@@ -340,18 +340,18 @@ body.is-menu-visible #menu .close {
 }
 #mypage-main .mypage-profile{
     width: 100%;
-    height : 12em;
+    height : 13em;
     margin-top: 2em;
     border: 1px solid #9DD044;
     border-radius : 5px;
 }
 #mypage-main .mypage-profile-img{
-    width : 30%;
-    height : inherit;
+    width : 29%;
+    height : 100%;
     float:left;
     margin : 0;
     padding : 1.5em 0.3em;
-    border-right : 1px solid #9dd044;
+    /*border-right : 1px solid #9dd044;*/
     background-color: #9dd044;
 }
 #mypage-main .mypage-profile-img img{
@@ -363,25 +363,66 @@ body.is-menu-visible #menu .close {
 #mypage-main .mypage-profile-content {
     width: 100%;
     height: inherit;
-    padding: 1em 0 0 6.5em;
+    padding: 0.7em 0 0 6em;
 }
 
 #mypage-main .mypage-profile-content li{
     margin : 0.5em 0;
 }
-
 #mypage-main .mypage-profile-edit{
     width: 4em;
-    height: 2em;
+    height: 3em;
     background-color: #9dd044;
     box-shadow: none;
     border-radius: 5px;
     z-index: 200;
     float: right;
-    margin-top: -3em;
+    margin-top: -4em;
     margin-right: 0.5em;
     padding : 0;
     font-size: 13px;
     font-weight: 800;
+}
+#mypage-main .mypage-profile-edit{
+    width: 4em;
+    height: 3em;
+    background-color: #9dd044;
+    box-shadow: none;
+    border-radius: 5px;
+    z-index: 200;
+    float: right;
+    margin-top: -4em;
+    margin-right: 7em;
+    padding : 0;
+    font-size: 13px;
+    font-weight: 800;
+}
+#mypage-main .mypage-profile-logout
+{
+    width: 6em;
+    height: 3em;
+    background-color: lightgray;
+    box-shadow: none;
+    border-radius: 5px;
+    z-index: 200;
+    float: right;
+    margin-top: -4em;
+    margin-right: 0.5em;
+    padding : 0;
+    font-size: 13px;
+    font-weight: 800;
+}
 
+#mypage-main .mypage-next{
+    float:right;
+    width:10%;
+    height:inherit;
+    margin-right: -1em;
+    margin-top:1em;
+}
+
+#mypage-main .mypage-list-detail{
+    float:left;
+    font-size: 15px;
+    margin-top:7px;
 }

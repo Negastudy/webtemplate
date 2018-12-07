@@ -1,112 +1,163 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="../assets/css/main.css" />
+<link rel="stylesheet" href="Study_Group.css">
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css-411">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!------ Include the above in your HEAD tag ---------->
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css-400">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="Study_Group.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title</title>
+    <title>NEGASTUDY</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <!--스터디 카테고리-->
-    <div class="st-category">
-        <h4 >#인적성</h4>
-    </div>
+    <div id="group-wrapper">
+        <header id="group-header">
+            <div class="inner">
 
-    <!--스터디 이름-->
-    <div class="st-name">
-        <H1>삼성전자 GSAT 스터디 </H1>
-    </div>
-    <!--hr은 빼도됨 // 디자인상 넣는게 좋은가 안좋은가-->
-    <hr>
+                <!-- Logo -->
+                <a href="../home/home.html" class="logo">
+                    <span class="symbol" >
+                        <img src="../images/로고_전구.png" alt="" />
+                    </span>
+                    <span class="title" style="font-size: 1.3em; color: #585858;">NEGASTUDY</span>
+                </a>
 
-    <!--스터디 일정-->
-    <div class="st-calender">
-        <img style="margin-left:15px; display:inline-block" src="../assets/img/icon/st_day_icon.png" width="10px" height="10px" alt="calender" />
-        <h5 class="st-day" style="display:inline-block">2099.12.25 ~ 2100.01.11  </h5><br>
-    </div>
+                <!-- Nav -->
+                <a href="../My_Page/mypage.html" class="mypage-icon">
+                    <span class="mypage-icon-but">
+                        <img src="../images/mypage_icon.png" style="width:2.5em; height:2em"/>
 
-    <!--스터디 공지사항-->
-    <div class = "st-speaker">
-        <img style="margin-left:15px; display:inline-block" src="../assets/img/icon/st_speaker.png" class="st_speaker" width="10px" height="10px" alt="speaker" />
-        <h5 class="st-speaker" style="display:inline-block">이곳은 공지사항 쓰는곳이랍니다  </h5>
-    </div>
+                    </span>
+                </a>
 
-    <!--일정-->
-    <table class="st-table">
-        <thead>
-        <tr>
-            <th scope="cols">날짜</th>
-            <th scope="cols">시간</th>
-            <th scope="cols">장소</th>
-            <th scope="cols">내용</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>내용</td>
-            <td>내용</td>
-            <td>내용</td>
-            <td>내용</td>
-        </tr>
-        <tr>
-            <td>내용</td>
-            <td>내용</td>
-            <td>내용</td>
-            <td>내용</td>
-        </tr>
-        <tr>
-            <td>내용</td>
-            <td>내용</td>
-            <td>내용</td>
-            <td>내용</td>
-        </tr>
-        <tr>
-            <td>내용</td>
-            <td>내용</td>
-            <td>내용</td>
-            <td>내용</td>
-        </tr>
-        </tbody>
-    </table>
-    <!--hr은 빼도됨 // 디자인상 넣는게 좋은가 안좋은가-->
-    <hr>
-    <!--스터디원 프로필 사진 수평 배치-->
-    <div class="st-people">
-        <div class="st-profile" style="display:inline-block">
-            <div class="st-profile-img">
-                <img style="margin-left:5px;border: 1px solid darkgrey;border-radius: 15px;-moz-border-radius: 15px;-webkit-border-radius: 100px;"
-             src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" width="50px" height="50px" alt="avatar"/>
             </div>
-            <p>
-                김태근
-        </div>
-        <div class="st-profile" style="display:inline-block">
-            <div class="st-profile-img">
-                <img style="margin-left:5px;border: 1px solid darkgrey;border-radius: 15px;-moz-border-radius: 15px;-webkit-border-radius: 100px;"
-                     src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" width="50px" height="50px" alt="avatar"/>
-            </div>
-            <p>
-                김하연
-        </div>
-        <div class="st-profile" style="display:inline-block">
-            <div class="st-profile-img">
-                <img style="margin-left:5px;border: 1px solid darkgrey;border-radius: 15px;-moz-border-radius: 15px;-webkit-border-radius: 100px;"
-                     src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" width="50px" height="50px" alt="avatar"/>
-            </div>
-            <p>
-                하석진
-        </div>
-        <div class="st-profile" style="display:inline-block">
-            <div class="st-profile-img">
-                <img style="margin-left:5px;border: 1px solid darkgrey;border-radius: 15px;-moz-border-radius: 15px;-webkit-border-radius: 100px;"
-                     src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" width="50px" height="50px" alt="avatar"/>
-            </div>
-            <p>
-                석혜경
-        </div>
+        </header>
+
     </div>
 
+
+    <div id="studygroup-main" class="container bootstrap snippet">
+        <div class="row">
+            <div class="col-sm-3" style="margin-top:5em"><!--left col-->
+
+            </div><!--/col-9-->
+        </div><!--/row-->
+        <!--&lt;!&ndash;스터디 카테고리&ndash;&gt;-->
+        <!--<div class="st-category">-->
+            <!--<h4 >#인적성</h4>-->
+        <!--</div>-->
+
+        <!--&lt;!&ndash;스터디 이름&ndash;&gt;-->
+        <!--<div class="st-name">-->
+            <!--<H1>삼성전자 GSAT 스터디 </H1>-->
+        <!--</div>-->
+        <!--&lt;!&ndash;hr은 빼도됨 // 디자인상 넣는게 좋은가 안좋은가&ndash;&gt;-->
+        <!--<hr>-->
+
+        <!--&lt;!&ndash;스터디 일정&ndash;&gt;-->
+        <!--<div class="st-calender">-->
+            <!--<img style="margin-left:15px; display:inline-block" src="../assets/img/icon/st_day_icon.png" width="10px" height="10px" alt="calender" />-->
+            <!--<h5 class="st-day" style="display:inline-block"> [다음 스터디 일정] 2018.12.15 잠실 토즈 카페 </h5><br>-->
+        <!--</div>-->
+
+        <!--&lt;!&ndash;스터디 공지사항&ndash;&gt;-->
+        <!--<div class = "st-speaker">-->
+            <!--<img style="margin-left:15px; display:inline-block" src="../assets/img/icon/st_speaker.png" class="st_speaker" width="10px" height="10px" alt="speaker" />-->
+            <!--<h5 class="st-speaker" style="display:inline-block"> 자소서 정독 후 질문 10개씩 만들기  </h5>-->
+        <!--</div>-->
+        <!--<div class = "st-speaker">-->
+            <!--<img style="margin-left:15px; display:inline-block" src="../assets/img/icon/st_speaker.png" class="st_speaker" width="10px" height="10px" alt="speaker" />-->
+            <!--<h5 class="st-speaker" style="display:inline-block"> 해커스 NCS 150문제 50분   </h5>-->
+        <!--</div>-->
+
+        <!--&lt;!&ndash;일정&ndash;&gt;-->
+        <!--<table class="st-table">-->
+            <!--<thead>-->
+            <!--<tr>-->
+                <!--<th scope="cols">날짜</th>-->
+                <!--<th scope="cols">시간</th>-->
+                <!--<th scope="cols">장소</th>-->
+                <!--<th scope="cols">내용</th>-->
+            <!--</tr>-->
+            <!--</thead>-->
+            <!--<tbody>-->
+            <!--<tr>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+            <!--</tr>-->
+            <!--</tbody>-->
+        <!--</table>-->
+        <!--&lt;!&ndash;hr은 빼도됨 // 디자인상 넣는게 좋은가 안좋은가&ndash;&gt;-->
+        <!--<hr>-->
+        <!--&lt;!&ndash;스터디원 프로필 사진 수평 배치&ndash;&gt;-->
+        <!--<div class="st-people">-->
+            <!--<div class="st-profile" style="display:inline-block">-->
+                <!--<div class="st-profile-img">-->
+                    <!--<img style="margin-left:5px;border: 1px solid darkgrey;border-radius: 15px;-moz-border-radius: 15px;-webkit-border-radius: 100px;"-->
+                         <!--src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" width="50px" height="50px" alt="avatar"/>-->
+                <!--</div>-->
+                <!--<p>-->
+                    <!--김태근-->
+            <!--</div>-->
+            <!--<div class="st-profile" style="display:inline-block">-->
+                <!--<div class="st-profile-img">-->
+                    <!--<img style="margin-left:5px;border: 1px solid darkgrey;border-radius: 15px;-moz-border-radius: 15px;-webkit-border-radius: 100px;"-->
+                         <!--src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" width="50px" height="50px" alt="avatar"/>-->
+                <!--</div>-->
+                <!--<p>-->
+                    <!--김하연-->
+            <!--</div>-->
+            <!--<div class="st-profile" style="display:inline-block">-->
+                <!--<div class="st-profile-img">-->
+                    <!--<img style="margin-left:5px;border: 1px solid darkgrey;border-radius: 15px;-moz-border-radius: 15px;-webkit-border-radius: 100px;"-->
+                         <!--src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" width="50px" height="50px" alt="avatar"/>-->
+                <!--</div>-->
+                <!--<p>-->
+                    <!--하석진-->
+            <!--</div>-->
+            <!--<div class="st-profile" style="display:inline-block">-->
+                <!--<div class="st-profile-img">-->
+                    <!--<img style="margin-left:5px;border: 1px solid darkgrey;border-radius: 15px;-moz-border-radius: 15px;-webkit-border-radius: 100px;"-->
+                         <!--src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" width="50px" height="50px" alt="avatar"/>-->
+                <!--</div>-->
+                <!--<p>-->
+                    <!--석혜경-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
 </body>
 </html>
