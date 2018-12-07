@@ -8,13 +8,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <title>NegaStudy</title>
-
-
     <!--  CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="Study_Create.css">
 </head>
 <body>
+<!--상단 바 공통-->
 <div id="create-wrapper">
     <header id="create-header">
         <div class="inner">
@@ -39,8 +38,9 @@
     </header>
 
 </div>
-
 <br><br><br><br><br>
+
+
 <style type="text/css">
     .tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc; border-radius:6px;}
     .tg td{font-family:'Roboto', sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
@@ -53,10 +53,11 @@
     .tg .tg-ys40{background-color:#f9f9f9;font-family:Verdana, Geneva, sans-serif !important;;text-align:left;vertical-align:top}
 </style>
 
-
+<!--헤드라인-->
 <div style="margin-left:15px;margin-bottom:-10px;color: grey;font-weight: lighter;font-family: 'Jeju Gothic' " >* 스터디를 생성하기 위한 조건을 선택하세요.</div><br>
 
 
+<!--스터디 생성 테이블-->
 <table class="tg" style="table-layout: fixed; width: 95%; margin-left:auto;margin-right:auto;border: 2px solid #9dd044;">
     <colgroup>
         <col style="width: 30%">
@@ -124,99 +125,11 @@
         <td class="tg-gqep" ><textarea cols="10" placeholder="내용을 입력하세요. " name="content" class="form-control"style="height:100px;"></textarea>
     </tr>
 </table>
-    <!--<br>-->
-    <!--<hr style="border-top: 1px solid #9E9E9E; margin-bottom: 0px;">-->
 
-    <!--<div class="formm" style="height:100px; width: 250px; margin-left:90px;">-->
+<!--스터디 등록할지 취소할지-->
 <input type="submit" value="등록" onclick="sendData()" class=" btn1"/>
 <input type="button" value="취소" class=" btn2" onclick=""/>
-    <!--</div>-->
-<!--</div>-->
-<!--<div class="container" style=" height:50em">-->
-    <!--<table class="table table-bordered" style="margin-top:10em; height:29em">-->
-        <!--<thead >-->
-        <!--&lt;!&ndash;<caption style="text-align:center;"> 스터디 생성하기 </caption>&ndash;&gt;-->
-        <!--</thead>-->
-        <!--<tbody style="background-color: #ffff; height:20em; border: 2px solid #9dd044">-->
 
-        <!--<form  method="post" encType="multiplart/form-data">-->
-            <!--<tr>-->
-                <!--<th style="text-align: center; margin-left:auto;">스터디 이름 </th>-->
-                <!--<td><input type="text" placeholder="스터디 이름을 입력하세요. " name="subject" class="form-control"/></td>-->
-            <!--</tr>-->
-            <!--<tr>-->
-                <!--<th style="text-align: center; vertical-align: center;">모집인원 </th>-->
-                <!--<td>-->
-                    <!--<div class="">-->
-                        <!--<label style="margin-left:10px;">-->
-                            <!--<input type="checkbox"> 2~3명-->
-                        <!--</label>-->
-                         <!--<label style="margin-left:20px;">-->
-                            <!--<input type="checkbox"> 3~4명-->
-                         <!--</label><br>-->
-                        <!--<label style="margin-left:10px;">-->
-                             <!--<input type="checkbox"> 4~5명-->
-                        <!--</label>-->
-                        <!--<label style="margin-left:20px;">-->
-                            <!--<input type="checkbox"> 5명이상-->
-                        <!--</label>-->
-                    <!--</div>-->
-                <!--</td>-->
-            <!--</tr>-->
-            <!--<tr>-->
-                <!--<th style="text-align: center; vertical-align: center;">카테고리 </th>-->
-
-                <!--<td>-->
-                    <!--<div class="checkbox">-->
-                        <!--<label style="margin-left:0px;">-->
-                            <!--<input type="checkbox"> 어학 스터디-->
-                        <!--</label>-->
-                        <!--<label style="margin-left:19px;">-->
-                            <!--<input type="checkbox"> 면접 스터디-->
-                        <!--</label><br>-->
-                        <!--<label style="margin-left:0px;">-->
-                            <!--<input type="checkbox"> 인적성 스터디-->
-                        <!--</label>-->
-                        <!--<label style="margin-left:5px;">-->
-                            <!--<input type="checkbox"> NCS 스터디-->
-                        <!--</label><br>-->
-                        <!--<label style="margin-left:0px;">-->
-                            <!--<input type="checkbox"> 기타 스터디-->
-                        <!--</label>-->
-                    <!--</div>-->
-                <!--</td>-->
-            <!--</tr>-->
-            <!--<tr>-->
-                <!--<th style="text-align: center; vertical-align: center;">모집 학교 </th>-->
-                <!--<td>-->
-                    <!--<div class="">-->
-                        <!--<select name="school" class="form-control-school" style="width:90%; height:30px;" >-->
-                            <!--<option value="대학교 상관없음" selected="selected" style="width:100%">대학교 상관없음</option>-->
-                            <!--&lt;!&ndash;<option value="대학교를 선택해주세요" selected="selected" style="width:80%">대학교를 선택해주세요</option>&ndash;&gt;-->
-                            <!--<option value="강원대학교">강원대학교</option>-->
-                            <!--<option value="단국대학교">단국대학교</option>-->
-                            <!--<option value="서강대학교">서강대학교</option>-->
-                            <!--<option value="연세대학교">연세대학교</option>-->
-                        <!--</select>-->
-                    <!--</div>-->
-                <!--</td>-->
-            <!--</tr>-->
-            <!--<tr>-->
-                <!--<th style="text-align: center; vertical-align: center;">설명 </th>-->
-                <!--<td><textarea cols="10" placeholder="내용을 입력하세요. " name="content" class="form-control"></textarea></td>-->
-            <!--</tr>-->
-            <!--<tr>-->
-                <!--<td colspan="2">-->
-                    <!--<input type="button" value="등록" onclick="sendData()" class=" btnbtn1"/>-->
-                    <!--<input type="button" value="취소" class=" btnbtn2" onclick=""/>-->
-                    <!--&lt;!&ndash; <a class="btn btn-default" onclick="sendData()"> 등록 </a>-->
-                    <!--<a class="btn btn-default" onclick="javascript:location.href='list.jsp'">글 목록으로...</a> &ndash;&gt;-->
-                <!--</td>-->
-            <!--</tr>-->
-        <!--</form>-->
-        <!--</tbody>-->
-    <!--</table>-->
-<!--</div>-->
 </body>
 </html>
 
