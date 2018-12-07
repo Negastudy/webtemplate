@@ -56,9 +56,10 @@
 
 			<section class="tiles">
 				<div class="home-myinfo">
+                    <!--스터디 갯수대로 반복 > 근데 각 스터디마다  최신것 하나만 나오도록-->
 					<ul class="home-ul" style="margin-bottom : 0em">
 						<li><img src="../images/main-alarm.png" style="width:1.2em; height:1em; margin-bottom: -2px;">
-							{{ 진행 중 스터디의 가장최근 일정}}</li>
+							{{study.name}} : {{meeting.location}} - {{meeting.date}}</li>
 						<li><img src="../images/main-alarm.png" style="width:1.2em; height:1em; margin-bottom: -2px">
 							{{ 진행 중 스터디의 가장최근 일정}}</li>
 
@@ -77,6 +78,9 @@
 						<!--</div>-->
 					</a>
 				</article>
+
+                <!--스터디 카테고리-->
+                <!--{% for  in  %}-->
 				<article class="style2">
 									<span class="image tile_img">
 										<img src="../images/main_img_samsung.png"  alt="" />
@@ -85,51 +89,52 @@
 						<h2>{{스터디 카테고리}}</h2>
 					</a>
 				</article>
-				<article class="style2">
-									<span class="image tile_img">
-										<img src="../images/main_omr.jpg" alt="" />
-									</span>
-					<a href="">
-						<h2>{{스터디 카테고리}}</h2>
+                <!--{% endfor %}-->
+				<!--<article class="style2">-->
+									<!--<span class="image tile_img">-->
+										<!--<img src="../images/main_omr.jpg" alt="" />-->
+									<!--</span>-->
+					<!--<a href="">-->
+						<!--<h2>{{스터디 카테고리}}</h2>-->
 
-					</a>
-				</article>
-				<article class="style2">
-									<span class="image tile_img">
-										<img src="../images/main_interview.jpg" alt="" />
-									</span>
-					<a href="">
-						<h2>{{스터디 카테고리}}</h2>
+					<!--</a>-->
+				<!--</article>-->
+				<!--<article class="style2">-->
+									<!--<span class="image tile_img">-->
+										<!--<img src="../images/main_interview.jpg" alt="" />-->
+									<!--</span>-->
+					<!--<a href="">-->
+						<!--<h2>{{스터디 카테고리}}</h2>-->
 
-					</a>
-				</article>
-				<article class="style2">
-									<span class="image tile_img">
-										<img src="../images/main_test.jpg" alt="" />
-									</span>
-					<a href="">
-						<h2>{{스터디 카테고리}}</h2>
+					<!--</a>-->
+				<!--</article>-->
+				<!--<article class="style2">-->
+									<!--<span class="image tile_img">-->
+										<!--<img src="../images/main_test.jpg" alt="" />-->
+									<!--</span>-->
+					<!--<a href="">-->
+						<!--<h2>{{스터디 카테고리}}</h2>-->
 
-					</a>
-				</article>
-				<article class="style2">
-									<span class="image tile_img">
-										<img src="../images/main_interview.jpg" alt="" />
-									</span>
-					<a href="">
-						<h2>{{스터디 카테고리}}</h2>
+					<!--</a>-->
+				<!--</article>-->
+				<!--<article class="style2">-->
+									<!--<span class="image tile_img">-->
+										<!--<img src="../images/main_interview.jpg" alt="" />-->
+									<!--</span>-->
+					<!--<a href="">-->
+						<!--<h2>{{스터디 카테고리}}</h2>-->
 
-					</a>
-				</article>
-				<article class="style2">
-									<span class="image tile_img">
-										<img src="../images/main_interview.jpg" alt="" />
-									</span>
-					<a href="">
-						<h2>{{스터디 카테고리}}</h2>
+					<!--</a>-->
+				<!--</article>-->
+				<!--<article class="style2">-->
+									<!--<span class="image tile_img">-->
+										<!--<img src="../images/main_interview.jpg" alt="" />-->
+									<!--</span>-->
+					<!--<a href="">-->
+						<!--<h2>{{스터디 카테고리}}</h2>-->
 
-					</a>
-				</article>
+					<!--</a>-->
+				<!--</article>-->
 			</section>
 		</div>
 	</div>
