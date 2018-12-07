@@ -55,18 +55,28 @@
 			</header>
 
 			<section class="tiles">
+				<!--<% for study in study%>-->
 				<div class="home-myinfo">
                     <!--스터디 갯수대로 반복 > 근데 각 스터디마다  최신것 하나만 나오도록-->
 					<ul class="home-ul" style="margin-bottom : 0em">
-                        <!--<li><img src="../images/main-alarm.png" style="width:1.2em; height:1em; margin-bottom: -2px;">-->
-                            <!--[ 취업 가자!! ]  해커스 NCS 50문제 풀기</li>-->
-                        <!--<li><img src="../images/main-alarm.png" style="width:1.2em; height:1em; margin-bottom: -2px">-->
-                            <!--[ 면접보러왔습니다 ]   자소서 지참</li>-->
-						<li><img src="../images/main-alarm.png" style="width:1.2em; height:1em; margin-bottom: -2px;">
-							{{study.name}} : {{meeting.location}} - {{meeting.date}}</li>
-						<li><img src="../images/main-alarm.png" style="width:1.2em; height:1em; margin-bottom: -2px">
-							{{ 진행 중 스터디의 가장최근 일정}}</li>
 
+
+						<li><img src="../images/main-alarm.png" style="width:1.2em; height:1em; margin-bottom: -2px">
+							[ {{ study.name }} ] : {{ meeting.date }} <br> {{ meeting.content }}</li>
+
+					</ul>
+				</div>
+				<!--<%endfor%>-->
+
+				<div class="home-myinfo">
+					<!--스터디 갯수대로 반복 > 근데 각 스터디마다  최신것 하나만 나오도록-->
+					<ul class="home-ul" style="margin-bottom : 0em">
+						<!--<li><img src="../images/main-alarm.png" style="width:1.2em; height:1em; margin-bottom: -2px">-->
+						<!--[ 면접보러왔습니다 ]   자소서 지참</li>-->
+						<!--<li><img src="../images/main-alarm.png" style="width:1.2em; height:1em; margin-bottom: -2px;">-->
+							<!--{{study.name}} : {{meeting.location}} - {{meeting.date}}</li>-->
+						<li><img src="../images/main-alarm.png" style="width:1.2em; height:1em; margin-bottom: -2px">
+							[ {{ study.name }} ] : {{ meeting.date }} <br> {{ meeting.content }}</li>
 					</ul>
 				</div>
                 <!--만약 학교 이메일 인증한 학생이면 보이기 if 문-->
@@ -75,7 +85,7 @@
 						<img src="../images/main_study.jpg"  alt="" />
 					</span>
 					<a href="">
-						<h2>#{{ 대학교 이름 }}</h2>
+						<h2>#{{ data. }}</h2>
 						<!--클릭해서 설명보이게 하고 싶을 경우 넣는 content-->
 						<!--<div class="content">-->
 							<!--<p>어학 관련 스터디</p>-->
@@ -90,19 +100,19 @@
 										<img src="../images/main_img_samsung.png"  alt="" />
 									</span>
 					<a href="">
-						<h2>{{스터디 카테고리}}</h2>
+						<h2> #GSAT </h2>
 					</a>
 				</article>
                 <!--{% endfor %}-->
-				<!--<article class="style2">-->
-									<!--<span class="image tile_img">-->
-										<!--<img src="../images/main_omr.jpg" alt="" />-->
-									<!--</span>-->
-					<!--<a href="">-->
-						<!--<h2>{{스터디 카테고리}}</h2>-->
+				<article class="style2">
+									<span class="image tile_img">
+										<img src="../images/main_omr.jpg" alt="" />
+									</span>
+					<a href="">
+						<h2>#어학</h2>
 
-					<!--</a>-->
-				<!--</article>-->
+					</a>
+				</article>
 				<!--<article class="style2">-->
 									<!--<span class="image tile_img">-->
 										<!--<img src="../images/main_interview.jpg" alt="" />-->

@@ -83,6 +83,8 @@
                 <!--개인 정보 변경 버튼-->
                 <button class="mypage-profile-edit">
                     <span style="color:white">변경</span></button>
+                <button onclick="" class="mypage-profile-logout">
+                    <span style="color:white">로그아웃</span></button>
 			</div>
 
             <br>
@@ -96,37 +98,51 @@
 
 			<!--진행 중인 스터디-->
             <!--li 클릭하면 스터디 상세 화면으로 이동 ** 데이터 가져가야함 -->
+            <!--이중 포문 필요할 듯-->
 			<ul class="list-group">
 				<li onclick="" class="list-group-item text-muted" style="background-color: #9dd044; border:none">
-                    <strong>진행 중 스터디</strong> </li>
+                    <strong>진행 중 스터디</strong></li>
+                <!--<%for study  in study   %>-->
+                <!--if 진행중-->
+                <!--스터디의 최신 meeting일정-->
 				<li class="list-group-item text-right"><span class="pull-left">
-                    <strong>{{스터디 이름}}</strong></span>
-                    <strong> > </strong>
+                    <strong>{{study.name}}</strong>
+                    <br><span class="mypage-list-detail">{{스터디 최신}}</span></span>
+                    <img src="../images/studylist-next.png" class="mypage-next"/>
                 </li>
+                <!--<%endfor%>-->
 				<li class="list-group-item text-right"><span class="pull-left">
-                    <strong>{{스터디 이름}}</strong></span>
-                    <strong> > </strong></li>
-				<li class="list-group-item text-right"><span class="pull-left">
-                    <strong>{{스터디 이름}}</strong></span>
-                    <strong> > </strong>
+                    <strong>{{스터디 이름}}</strong>
+                    <br><span class="mypage-list-detail">스터디 정보</span></span>
+                    <img src="../images/studylist-next.png" class="mypage-next"/>
+                </li>
+                <li class="list-group-item text-right"><span class="pull-left">
+                    <strong>{{스터디 이름}}</strong>
+                    <br><span class="mypage-list-detail">스터디 정보</span></span>
+                    <img src="../images/studylist-next.png" class="mypage-next"/>
                 </li>
 
 			</ul>
 
             <!--완료된 스터디-->
             <ul class="list-group">
+                <!--<%for study  in study   %>-->
+                <!--if 완료-->
                 <li class="list-group-item text-muted" style="background-color: lightgray">
-                    <strong>완료 된 스터디</strong> </li>
+                    <strong>완료 된 스터디</strong></li>
                 <li class="list-group-item text-right"><span class="pull-left">
                     <strong>{{스터디 이름}}</strong></span>
-                    <strong> > </strong>
+                    <img src="../images/studylist-next.png" class="mypage-next"/>
                 </li>
+
                 <li class="list-group-item text-right"><span class="pull-left">
                     <strong>{{스터디 이름}}</strong></span>
-                    <strong> > </strong></li>
+                    <img src="../images/studylist-next.png" class="mypage-next"/>
+                </li>
+
                 <li class="list-group-item text-right"><span class="pull-left">
                     <strong>{{스터디 이름}}</strong></span>
-                    <strong> > </strong>
+                    <img src="../images/studylist-next.png" class="mypage-next"/>
                 </li>
 
             </ul>
