@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="../assets/css/main.css" />
+<link rel="stylesheet" href="Edit_Study_Group.css">
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css-411">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!------ Include the above in your HEAD tag ---------->
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css-400">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<html lang="en">
+<head>
+    <title>NEGASTUDY</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div id="edit-wrapper">
+    <header id="edit-header">
+        <div class="inner">
+
+            <!-- Logo -->
+            <a href="../home/home.html" class="logo">
+                    <span class="symbol" >
+                        <img src="../images/로고_전구.png" alt="" />
+                    </span>
+                <span class="title" style="font-size: 1.3em; color: #585858;">NEGASTUDY</span>
+            </a>
+
+
+            <!-- Nav -->
+            <a href="../My_Page/mypage.html" class="mypage-icon">
+                <!--세팅버튼-->
+                <span class="mypage-icon-but2">
+                        <img src="../images/group-setting.png" style="width:2.5em; height:2em"/>
+                    </span>
+                <!--마이페이지 버튼-->
+                <span class="mypage-icon-but">
+                        <img src="../images/mypage_icon.png" style="width:2.5em; height:2em"/>
+
+                    </span>
+            </a>
+
+        </div>
+    </header>
+
+</div>
+
+
+<div id="studyedit-main" class="container bootstrap snippet">
+    <div class="row">
+        <div class="col-sm-3" style="margin-top:5em"><!--left col-->
+            <!--스터디 카테고리 & 스터디 이름-->
+            <div class="study-cate">
+                #{{ study.category }}
+            </div>
+            <div class="study-name">
+                {{study.name}}
+                {% if complete %}
+                <span style="background-color: rgb(246, 246, 246); color: rgb(102, 102, 102); border-color: rgb(216, 216, 216); font-weight:700;font-size: 0.7em">종료</span>
+                {% else %}
+                <span style="color:#9dd044; font-size: 0.7em; font-weight:700;">진행중</span>
+                {% endif %}
+            </div>
+
+            <!--다음 일정 날짜-->
+            <!--<div class="next-meeting-date">-->
+                <!--<img src="../images/group-cal.png"/>-->
+                <!--<P>다음 일정 : 18-12-28 잠원동 토즈</P>-->
+            <!--</div>-->
+            <!--공지사항 -->
+            <div class="study-alarm">
+                <!--<img src="../images/group-announce.png">-->
+                <form action="/edit_notice" method="post">
+                    <legend>공지 등록</legend>
+                    <textarea name="notice" class="edit-notice-box" placeholder="공지를 입력하세요."></textarea>
+                    <input type="submit" value="등록" class="edit-notice-but"/>
+                </form>
+                <!--<p>자소서 필참 질문 10개</p>-->
+                <!--<p>1분 자기소개 2가지 준비</p>-->
+            </div>
+
+            <!--그동안의 일정-->
+            <div class="study-sche">
+                <legend> 일정 관리 </legend>
+                <table>
+                    <tbody>
+                    <tr><td>
+                        <p style="font-weight: 800; font-size: 20px; text-align: center; color:darkgray">
+                            일정 없음
+                        </p></td>
+
+                    </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <tbody>
+                    <!--여기다가 for 문-->
+                    <!--tr은 행한 줄 td는 한 열-->
+                    <tr>
+                        <td class="tbst-date">{{meeting.date}}</td>
+                        <td class="tbst-time">{{meeting.time}}</td>
+                        <td class="tbst-content">[장소] {{meeting.location}}
+                            <br>
+                            [내용] {{meeting.content}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tbst-date">{{meeting.date}}</td>
+                        <td class="tbst-time">{{meeting.time}}</td>
+                        <td class="tbst-content">[장소] {{meeting.location}}
+                            <br>
+                            [내용] {{meeting.content}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tbst-date">{{meeting.date}}</td>
+                        <td class="tbst-time">{{meeting.time}}</td>
+                        <td class="tbst-content">[장소] {{meeting.location}}
+                            <br>
+                            [내용] {{meeting.content}}
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!--멤버 관리-->
+            <div class="study-mem">
+                <legend> 회원 관리 </legend>
+                <!--멤버별-->
+                <div class="mem">
+                    <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="mem-img"/>
+                    <div class="mem-content"> <strong> {{username}} 참여도</strong>
+                        <!--<p> 스터디 참여도</p>-->
+                        <DIV class=progress-small>
+                            <DIV role=progressbar aria-valuenow=10 aria-valuemin=0 class="progress-bar-small progress-bar-s-success" style="WIDTH: 50%" aria-valuemax=100>
+                                <SPAN class=sr-only>60% Complete</SPAN>
+                            </DIV><!-- Complete -->
+                        </DIV>
+                    </div>
+                </div>
+                <div class="mem">
+                    <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="mem-img"/>
+                    <div class="mem-content"> <strong> {{username}} 참여도</strong>
+                        <!--<p> 스터디 참여도</p>-->
+                        <DIV class=progress-small>
+                            <DIV role=progressbar aria-valuenow=10 aria-valuemin=0 class="progress-bar-small progress-bar-s-success" style="WIDTH: 30%" aria-valuemax=100>
+                                <SPAN class=sr-only>60% Complete</SPAN>
+                            </DIV><!-- Complete -->
+                        </DIV>
+                    </div>
+                </div>
+                <div class="mem">
+                    <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="mem-img"/>
+                    <div class="mem-content">
+                        <strong> {{username}} 참여도</strong>
+                        <!--<p> 스터디 참여도</p>-->
+                        <DIV class=progress-small>
+                            <DIV role=progressbar aria-valuenow=10 aria-valuemin=0 class="progress-bar-small progress-bar-s-success" style="WIDTH: 60%" aria-valuemax=100>
+                                <SPAN class=sr-only>60% Complete</SPAN>
+                            </DIV><!-- Complete -->
+                        </DIV>
+                    </div>
+                </div>
+            </div>
+        </div><!--/col-9-->
+    </div><!--/row-->
+    <!--&lt;!&ndash;스터디 카테고리&ndash;&gt;-->
+    <!--<div class="st-category">-->
+    <!--<h4 >#인적성</h4>-->
+    <!--</div>-->
+
+    <!--&lt;!&ndash;스터디 이름&ndash;&gt;-->
+    <!--<div class="st-name">-->
+    <!--<H1>삼성전자 GSAT 스터디 </H1>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;hr은 빼도됨 // 디자인상 넣는게 좋은가 안좋은가&ndash;&gt;-->
+    <!--<hr>-->
+
+    <!--&lt;!&ndash;스터디 일정&ndash;&gt;-->
+    <!--<div class="st-calender">-->
+    <!--<img style="margin-left:15px; display:inline-block" src="../assets/img/icon/st_day_icon.png" width="10px" height="10px" alt="calender" />-->
+    <!--<h5 class="st-day" style="display:inline-block"> [다음 스터디 일정] 2018.12.15 잠실 토즈 카페 </h5><br>-->
+    <!--</div>-->
+
+    <!--&lt;!&ndash;스터디 공지사항&ndash;&gt;-->
+    <!--<div class = "st-speaker">-->
+    <!--<img style="margin-left:15px; display:inline-block" src="../assets/img/icon/st_speaker.png" class="st_speaker" width="10px" height="10px" alt="speaker" />-->
+    <!--<h5 class="st-speaker" style="display:inline-block"> 자소서 정독 후 질문 10개씩 만들기  </h5>-->
+    <!--</div>-->
+    <!--<div class = "st-speaker">-->
+    <!--<img style="margin-left:15px; display:inline-block" src="../assets/img/icon/st_speaker.png" class="st_speaker" width="10px" height="10px" alt="speaker" />-->
+    <!--<h5 class="st-speaker" style="display:inline-block"> 해커스 NCS 150문제 50분   </h5>-->
+    <!--</div>-->
+
+    <!--&lt;!&ndash;일정&ndash;&gt;-->
+    <!--<table class="st-table">-->
+    <!--<thead>-->
+    <!--<tr>-->
+    <!--<th scope="cols">날짜</th>-->
+    <!--<th scope="cols">시간</th>-->
+    <!--<th scope="cols">장소</th>-->
+    <!--<th scope="cols">내용</th>-->
+    <!--</tr>-->
+    <!--</thead>-->
+    <!--<tbody>-->
+    <!--<tr>-->
+    <!--<td></td>-->
+    <!--<td></td>-->
+    <!--<td></td>-->
+    <!--<td></td>-->
+    <!--</tr>-->
+    <!--<tr>-->
+    <!--<td></td>-->
+    <!--<td></td>-->
+    <!--<td></td>-->
+    <!--<td></td>-->
+    <!--</tr>-->
+    <!--<tr>-->
+    <!--<td></td>-->
+    <!--<td></td>-->
+    <!--<td></td>-->
+    <!--<td></td>-->
+    <!--</tr>-->
+    <!--<tr>-->
+    <!--<td></td>-->
+    <!--<td></td>-->
+    <!--<td></td>-->
+    <!--<td></td>-->
+    <!--</tr>-->
+    <!--</tbody>-->
+    <!--</table>-->
+    <!--&lt;!&ndash;hr은 빼도됨 // 디자인상 넣는게 좋은가 안좋은가&ndash;&gt;-->
+    <!--<hr>-->
+    <!--&lt;!&ndash;스터디원 프로필 사진 수평 배치&ndash;&gt;-->
+    <!--<div class="st-people">-->
+    <!--<div class="st-profile" style="display:inline-block">-->
+    <!--<div class="st-profile-img">-->
+    <!--<img style="margin-left:5px;border: 1px solid darkgrey;border-radius: 15px;-moz-border-radius: 15px;-webkit-border-radius: 100px;"-->
+    <!--src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" width="50px" height="50px" alt="avatar"/>-->
+    <!--</div>-->
+    <!--<p>-->
+    <!--김태근-->
+    <!--</div>-->
+    <!--<div class="st-profile" style="display:inline-block">-->
+    <!--<div class="st-profile-img">-->
+    <!--<img style="margin-left:5px;border: 1px solid darkgrey;border-radius: 15px;-moz-border-radius: 15px;-webkit-border-radius: 100px;"-->
+    <!--src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" width="50px" height="50px" alt="avatar"/>-->
+    <!--</div>-->
+    <!--<p>-->
+    <!--김하연-->
+    <!--</div>-->
+    <!--<div class="st-profile" style="display:inline-block">-->
+    <!--<div class="st-profile-img">-->
+    <!--<img style="margin-left:5px;border: 1px solid darkgrey;border-radius: 15px;-moz-border-radius: 15px;-webkit-border-radius: 100px;"-->
+    <!--src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" width="50px" height="50px" alt="avatar"/>-->
+    <!--</div>-->
+    <!--<p>-->
+    <!--하석진-->
+    <!--</div>-->
+    <!--<div class="st-profile" style="display:inline-block">-->
+    <!--<div class="st-profile-img">-->
+    <!--<img style="margin-left:5px;border: 1px solid darkgrey;border-radius: 15px;-moz-border-radius: 15px;-webkit-border-radius: 100px;"-->
+    <!--src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" width="50px" height="50px" alt="avatar"/>-->
+    <!--</div>-->
+    <!--<p>-->
+    <!--석혜경-->
+    <!--</div>-->
+    <!--</div>-->
+</div>
+</body>
+</html>
