@@ -317,13 +317,13 @@ body.is-menu-visible #menu .close {
 .btn1 {
     margin-left: 100px;
     margin-top: 25px;
-    -moz-box-shadow:inset 0px 1px 0px 0px #c1ed9c;
-    -webkit-box-shadow:inset 0px 1px 0px 0px #c1ed9c;
-    box-shadow:inset 0px 1px 0px 0px #c1ed9c;
-    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c5e37f), color-stop(1, #8cb82b) );
+    -moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+    box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5) );
     /*background:-moz-linear-gradient( center top, #c5e37f 5%, #8cb82b 100% );*/
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c5e37f', endColorstr='#8cb82b');
-    background-color:#c5e37f;
+    background-color:#79bbff;
     -webkit-border-top-left-radius:27px;
     -moz-border-radius-topleft:27px;
     border-top-left-radius:27px;
@@ -337,7 +337,7 @@ body.is-menu-visible #menu .close {
     -moz-border-radius-bottomleft:27px;
     border-bottom-left-radius:27px;
     text-indent:1px;
-    border:1px solid #83c41a;
+    border:1px solid #84bbf3;
     display:inline-block;
     color:#ffffff;
     font-family:Trebuchet MS;
@@ -349,26 +349,27 @@ body.is-menu-visible #menu .close {
     width:67px;
     text-decoration:none;
     text-align:center;
-    text-shadow:1px 1px 0px #689324;
+    text-shadow:1px 1px 0px #528ecc;
 }
 .btn1:hover {
-    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #8cb82b), color-stop(1, #c5e37f) );
-    /*background:-moz-linear-gradient( center top, #8cb82b 5%, #c5e37f 100% );*/
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#8cb82b', endColorstr='#c5e37f');
-    background-color:#8cb82b;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );
+    /*background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
+    background-color:#378de5;
 }.btn1:active {
      position:relative;
      top:1px;
  }
 .btn2 {
-    margin-left:10px;
-    -moz-box-shadow:inset 0px 1px 0px 0px #c1ed9c;
-    -webkit-box-shadow:inset 0px 1px 0px 0px #c1ed9c;
-    box-shadow:inset 0px 1px 0px 0px #c1ed9c;
-    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c5e37f), color-stop(1, #8cb82b) );
+    margin-left: 10px;
+    margin-top: 25px;
+    -moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+    box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5) );
     /*background:-moz-linear-gradient( center top, #c5e37f 5%, #8cb82b 100% );*/
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c5e37f', endColorstr='#8cb82b');
-    background-color:#c5e37f;
+    background-color:#79bbff;
     -webkit-border-top-left-radius:27px;
     -moz-border-radius-topleft:27px;
     border-top-left-radius:27px;
@@ -382,7 +383,7 @@ body.is-menu-visible #menu .close {
     -moz-border-radius-bottomleft:27px;
     border-bottom-left-radius:27px;
     text-indent:1px;
-    border:1px solid #83c41a;
+    border:1px solid #84bbf3;
     display:inline-block;
     color:#ffffff;
     font-family:Trebuchet MS;
@@ -394,30 +395,7 @@ body.is-menu-visible #menu .close {
     width:67px;
     text-decoration:none;
     text-align:center;
-    text-shadow:1px 1px 0px #689324;
-}
-.btnbtn1{
-    background-color: #DDFFAA;
-    border-color: grey;
-    /*border:none;*/
-    border-radius: 10px;
-    width : 6.5em;
-    height:4em;
-    margin-top:1em;
-    margin-left:6em;
-}
-
-.btnbtn2{
-    background-color: #DDFFAA;
-    border-color: grey;
-    /*border:none;*/
-    border-radius: 10px;
-    width : 6.5em;
-    height:4em;
-    margin-top:-1em;
-    margin-right:-2em;
-    margin-left:10px;
-
+    text-shadow:1px 1px 0px #528ecc;
 }
 
 #create-header .mypage-icon {
