@@ -238,11 +238,11 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 
 		h2 {
-			font-size: 1em;
+			font-size: 1.1em;
 		}
 
 		h3 {
-			font-size: 0.8em;
+			font-size: 0.9em;
 		}
 
 	}
@@ -2664,6 +2664,7 @@ input, select, textarea {
 
 				.tiles article > a > :last-child {
 					margin: 0;
+					margin-top : 5px;
 				}
 
 				.tiles article > a:hover {
@@ -2692,12 +2693,12 @@ input, select, textarea {
             .tiles article.style1 > .image:before {
                         /*background-color: #9d9d9d;*/
                         /*opacity: 0.6;*/
-                        background: #000000; background: rgba(0, 0, 0, 0.5);
+                        background: #000000; background: rgba(0, 0, 0, 0.4);
                     }
 
 			.tiles article.style2 > .image:before {
 				/*background-color: #7ecaf6;*/
-                background: #000000; background: rgba(0, 0, 0, 0.5);
+                background: #000000; background: rgba(0, 0, 0, 0.4);
 			}
 
 			/*.tiles article.style3 > .image:before {*/
@@ -3414,4 +3415,57 @@ input, select, textarea {
 	padding : 0;
 	list-style-type: none;
 	font-weight: 700;
+}
+
+.create-study{
+	/*margin-left:200px;*/
+	/*margin-top:400px;*/
+	width :95%;
+	heignt:3em;
+	margin: 0em 0.5em -2em 0.5em;
+	background-color: #9dd400 ;
+	box-shadow: none;
+	border-radius : 5px;
+
+}
+
+.inner .create-study img{
+	width :  2.5em;
+	height: 2.5em;
+	float:left
+}
+.create-content {
+	font-weight: 700;
+	font-size: 20px;
+	text-align: center;
+	color:white;
+}
+
+.home-study-list{
+	width:100%;
+	margin-top: 0.5em;
+}
+
+.home-study-list .home-list-box{
+	width: 95%;
+	height: 100%;
+	margin :0.5em;
+	border: 2px solid lightgray;
+	border-radius: 3px;
+	padding-top:10px;
+
+}
+
+.home-list-box img{
+	float: right;
+	width: 2em;
+	height:2em;
+	margin-top : -3em;
+
+}
+.home-study-list .home-list-box p{
+	font-size: 15px;
+	font-weight: 700;
+	margin: 0.5em 0 0.5em 0.7em;
+
 }

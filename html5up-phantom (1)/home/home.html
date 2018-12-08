@@ -79,13 +79,32 @@
 							[ {{ study.name }} ] : {{ meeting.date }} <br> {{ meeting.content }}</li>
 					</ul>
 				</div>
+
+				<!--보여줄 스터디 포문 3개정도면 되듯-->
+				<div class="home-study-list">
+					<div class="home-list-box">
+						<p> #서강대학교 #어학</p>
+						<p> 현재 모집 중 스터디 : 7개 </p>
+						<img src="../images/studylist-next.png">
+					</div>
+
+				</div>
+				<div class="home-study-list">
+					<div class="home-list-box">
+						<p> #서강대학교 #어학</p>
+						<p> 현재 모집 중 스터디 : 7개 </p>
+						<img src="../images/studylist-next.png">
+					</div>
+				</div>
+
                 <!--만약 학교 이메일 인증한 학생이면 보이기 if 문-->
 				<article class="style1" style="width:100%">
 					<span class="image tile_img">
-						<img src="../images/main_study.jpg"  alt="" />
+						<!--<img src="../images/main_study.jpg"  alt="" />-->
 					</span>
 					<a href="">
-						<h2>#{{ data. }}</h2>
+						<h2>#서강대학교 #어학</h2>
+						<h3>현재 모집 중 스터디 : 7개 </h3>
 						<!--클릭해서 설명보이게 하고 싶을 경우 넣는 content-->
 						<!--<div class="content">-->
 							<!--<p>어학 관련 스터디</p>-->
@@ -96,60 +115,34 @@
                 <!--스터디 카테고리-->
                 <!--{% for  in  %}-->
 				<article class="style2">
-									<span class="image tile_img">
-										<img src="../images/main_img_samsung.png"  alt="" />
-									</span>
+					<span class="image tile_img">
+										<!--<img src="../images/main_img_samsung.png"  alt="" />-->
+					</span>
 					<a href="">
-						<h2> #GSAT </h2>
+						<h2> #GSAT #삼성 </h2>
+						<h3>모집 중 : {{}}개</h3>
 					</a>
 				</article>
                 <!--{% endfor %}-->
 				<article class="style2">
 									<span class="image tile_img">
-										<img src="../images/main_omr.jpg" alt="" />
+										<!--<img src="../images/main_omr.jpg" alt="" />-->
 									</span>
 					<a href="">
 						<h2>#어학</h2>
-
+						<h3>모집 중 : {{}}개</h3>
 					</a>
 				</article>
-				<article class="style2">
-									<span class="image tile_img">
-										<img src="../images/main_interview.jpg" alt="" />
-									</span>
-					<a href="">
-						<h2>#임원_면접 </h2>
 
-					</a>
-				</article>
-				<article class="style2">
-									<span class="image tile_img">
-										<img src="../images/main_test.jpg" alt="" />
-									</span>
-					<a href="">
-						<h2>#임용_고시</h2>
-
-					</a>
-				</article>
-				<!--<article class="style2">-->
-									<!--<span class="image tile_img">-->
-										<!--<img src="../images/main_interview.jpg" alt="" />-->
-									<!--</span>-->
-					<!--<a href="">-->
-						<!--<h2>{{스터디 카테고리}}</h2>-->
-
-					<!--</a>-->
-				<!--</article>-->
-				<!--<article class="style2">-->
-									<!--<span class="image tile_img">-->
-										<!--<img src="../images/main_interview.jpg" alt="" />-->
-									<!--</span>-->
-					<!--<a href="">-->
-						<!--<h2>{{스터디 카테고리}}</h2>-->
-
-					<!--</a>-->
-				<!--</article>-->
+.
 			</section>
+			<button  class="create-study">
+				<a href="../Study_Create/Study_Create.html">
+				<!--<img src="../images/main-plus.png"/>-->
+				<p class="create-content">스터디 생성하기</p>
+				</a>
+			</button>
+
 		</div>
 	</div>
 
