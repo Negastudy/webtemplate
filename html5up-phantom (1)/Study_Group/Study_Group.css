@@ -307,6 +307,8 @@ body.is-menu-visible #menu .close {
     font-weight: 900;
     letter-spacing: 0.35em;
     margin: 0;
+    margin-left: 1.5em;
+
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
@@ -320,7 +322,7 @@ body.is-menu-visible #menu .close {
 
 #group-header .mypage-icon .mypage-icon-but {
     /*margin-right: 0.65em;*/
-    margin-left: 5em;
+    /*margin-left: 2em;*/
 }
 
 #group-header .mypage-icon .mypage-icon-but img {
@@ -335,71 +337,169 @@ body.is-menu-visible #menu .close {
 
 
 
-.st-category {
-    /*font-size: 20px;*/
-    /*font-weight:900;*/
-    color: #9DD044;
-    margin-bottom: 10px;
-    margin-left:15px;
-}
-.st-name{
-    margin-left:10px;
-
-
-
-}
-.st-day {
-    /*font-size: 20px;*/
-    /*font-weight:900;*/
+/*.st-category {*/
+    /*!*font-size: 20px;*!*/
+    /*!*font-weight:900;*!*/
     /*color: #9DD044;*/
     /*margin-bottom: 10px;*/
-    margin-top:10px;
-    margin-bottom:10px;
-}
-.st-people {
+    /*margin-left:15px;*/
+/*}*/
+/*.st-name{*/
+    /*margin-left:10px;*/
 
-}
-.st-profile {
-    margin-top:30px;
-    margin-bottom:10px;
-    margin-left:15px;
-}
-.st-profile-img {
-    /* class로 세팅하면 이미지 각각을 동그랗게 만드는거가 안됨 ㅜㅜ -> html 각 이미지마다 넣어야 되나봄*/
-    /*margin-left:5px;*/
-    /*border: 1px solid darkgrey;*/
-    /*border-radius: 15px;*/
-    /*-moz-border-radius: 15px;*/
-    /*-webkit-border-radius: 100px;*/
-}
 
-.st-speaker{
-    margin-top:0px;
-    margin-bottom:0
-}
-table.st-table {
-    border-collapse: separate;
-    border-spacing: 1px;
-    text-align: center;
-    line-height: 1.5;
-    margin: 20px 10px;
-}
-table.st-table th {
-    width: 155px;
-    padding: 10px;
-    font-weight: bold;
-    vertical-align: top;
-    color: #fff;
-    background: #ce4869 ;
-}
-table.st-table td {
-    width: 155px;
-    padding: 10px;
-    vertical-align: top;
-    border-bottom: 1px solid #ccc;
-    background: #eee;
-}
+
+/*}*/
+/*.st-day {*/
+    /*!*font-size: 20px;*!*/
+    /*!*font-weight:900;*!*/
+    /*!*color: #9DD044;*!*/
+    /*!*margin-bottom: 10px;*!*/
+    /*margin-top:10px;*/
+    /*margin-bottom:10px;*/
+/*}*/
+/*.st-people {*/
+
+/*}*/
+/*.st-profile {*/
+    /*margin-top:30px;*/
+    /*margin-bottom:10px;*/
+    /*margin-left:15px;*/
+/*}*/
+/*.st-profile-img {*/
+    /*!* class로 세팅하면 이미지 각각을 동그랗게 만드는거가 안됨 ㅜㅜ -> html 각 이미지마다 넣어야 되나봄*!*/
+    /*!*margin-left:5px;*!*/
+    /*!*border: 1px solid darkgrey;*!*/
+    /*!*border-radius: 15px;*!*/
+    /*!*-moz-border-radius: 15px;*!*/
+    /*!*-webkit-border-radius: 100px;*!*/
+/*}*/
+
+/*.st-speaker{*/
+    /*margin-top:0px;*/
+    /*margin-bottom:0*/
+/*}*/
+/*table.st-table {*/
+    /*border-collapse: separate;*/
+    /*border-spacing: 1px;*/
+    /*text-align: center;*/
+    /*line-height: 1.5;*/
+    /*margin: 20px 10px;*/
+/*}*/
+/*table.st-table th {*/
+    /*width: 155px;*/
+    /*padding: 10px;*/
+    /*font-weight: bold;*/
+    /*vertical-align: top;*/
+    /*color: #fff;*/
+    /*background: #ce4869 ;*/
+/*}*/
+/*table.st-table td {*/
+    /*width: 155px;*/
+    /*padding: 10px;*/
+    /*vertical-align: top;*/
+    /*border-bottom: 1px solid #ccc;*/
+    /*background: #eee;*/
+/*}*/
 
 #studygroup-main{
     /*margin-top : 5em;*/
+}
+
+#studygroup-main .study-cate{
+    width:100%;
+    heignt:2em;
+    text-align: left;
+    font-weight: 800;
+    color:#9dd044;
+    padding:0.5em 0 0.5em 0.5em;
+
+}
+#studygroup-main .study-name{
+    width :100%;
+    text-align:center ;
+    font-weight: 700;
+    font-size:25px;
+    color : darkgray;
+    margin-bottom : 0.3em;
+}
+
+#studygroup-main .next-meeting-date{
+    width :100%;
+    padding-left: 0.5em;
+    padding-top :0.5em;
+}
+
+#studygroup-main .next-meeting-date img{
+    float: left;
+    width: 1.8em;
+    height: 1.5em;
+    margin-left: -3px;
+
+}
+
+#studygroup-main .next-meeting-date p{
+    font-size: 15px;
+    margin-left:25px;
+}
+
+#studygroup-main .study-alarm{
+    width :100%;
+    padding: 0.5em;
+    /*padding-top :0.5em;*/
+    border: 1px solid #9dd044;
+    border-radius: 5px;
+}
+
+#studygroup-main .study-alarm img{
+    float : left;
+    width: 1.5em;
+    height:1.5em;
+    margin-top: 0.5em;
+
+}
+#studygroup-main .study-alarm p{
+    font-size: 15px;
+    margin-left:25px;
+    font-weight: 700;
+    margin-top: 0.5em;
+}
+
+#studygroup-main .study-sche{
+    margin-top: 2em;
+    width:100%;
+}
+#studygroup-main .study-sche table td{
+    padding:0.5em ;
+}
+.tbst-date{
+    width:10%;
+}
+.tbst-time{
+    width:10%;
+}
+.tbst-content{
+    width:100px;
+    text-overflow:ellipsis;
+    white-space:normal;
+    word-wrap:normal;
+    /*width:100px;*/
+    overflow:hidden;
+}
+.mem{
+    margin: 1em 0.5em;
+}
+.mem img{
+    width : 60px;
+    height :60px;
+    border-radius: 50px;
+}
+
+.mem-content{
+    float : right;
+
+}
+
+.mypage-icon-but2{
+    margin : 0
 }
