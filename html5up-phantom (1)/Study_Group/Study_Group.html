@@ -38,7 +38,7 @@
 
 
                 <!-- Nav -->
-                <a href="../My_Page/mypage.html" class="mypage-icon">
+                <a href="Edit_Study_Group.html" class="mypage-icon">
                    <!--세팅버튼-->
                     <span class="mypage-icon-but2">
                         <img src="../images/group-setting.png" style="width:2.5em; height:2em"/>
@@ -65,48 +65,70 @@
                 </div>
                 <div class="study-name">
                     {{study.name}}
+                    {% if complete %}
+                    <span style="background-color: rgb(246, 246, 246); color: rgb(102, 102, 102); border-color: rgb(216, 216, 216); font-weight:700;font-size: 0.7em">종료</span>
+                    {% else %}
+                    <span style="color:#9dd044; font-size: 0.7em; font-weight:700;">진행중</span>
+                    {% endif %}
                 </div>
 
                 <!--다음 일정 날짜-->
-                <div class="next-meeting-date">
-                    <img src="../images/group-cal.png"/>
-                    <P>다음 일정 : 18-12-28 잠원동 토즈</P>
-                </div>
+                <!--<div class="next-meeting-date">-->
+                    <!--<img src="../images/group-cal.png"/>-->
+                    <!--<P>다음 일정 : 18-12-28 잠원동 토즈</P>-->
+                <!--</div>-->
                 <!--공지사항 -->
                 <div class="study-alarm">
                     <img src="../images/group-announce.png">
-                    <p>자소서 필참 질문 10개</p>
-                    <p>1분 자기소개 2가지 준비</p>
+                    {% if notice != None %}
+                    <p class="st-speaker" style="display:inline-block">"{{ notice }}"  </p>
+                    {% else %}
+                    <p class="st-speaker" style="display:inline-block"><span style="color: gray">공지 없음 </span></p>
+                    {% endif %}
+                    <!--<p>자소서 필참 질문 10개</p>-->
+                    <!--<p>1분 자기소개 2가지 준비</p>-->
                 </div>
 
                 <!--그동안의 일정-->
                 <div class="study-sche">
+                    <legend> 일정 관리 </legend>
+                    <table>
+                        <tbody>
+                        <tr><td>
+                            <p style="font-weight: 800; font-size: 20px; text-align: center; color:darkgray">
+                                일정 없음
+                            </p></td>
+
+                        </tr>
+                        </tbody>
+                    </table>
                     <table>
                         <tbody>
                         <!--여기다가 for 문-->
                         <!--tr은 행한 줄 td는 한 열-->
                         <tr>
-                            <td class="tbst-date">181214</td>
-                            <td class="tbst-time">18:20pm</td>
-                            <td class="tbst-content">[장소] {{스터디 장소}}
+                            <td class="tbst-date">{{meeting.date}}</td>
+                            <td class="tbst-time">{{meeting.time}}</td>
+                            <td class="tbst-content">[장소] {{meeting.location}}
                                 <br>
-                                [내용] {{스터디 내용}}
+                                [내용] {{meeting.content}}
                             </td>
                         </tr>
                         <tr>
-                            <td class="tbst-date">181214</td>
-                            <td class="tbst-time">18:20pm</td>
-                            <td class="tbst-content">[장소] {{스터디 장소}}
+                            <td class="tbst-date">{{meeting.date}}</td>
+                            <!--줄바꿈-->
+                            <td class="tbst-time">{{meeting.time}}</td>
+                            <td class="tbst-content">[장소] {{meeting.location}}
                                 <br>
-                                [내용] {{스터디 내용}}
+                                [내용] {{meeting.content}}
                             </td>
                         </tr>
                         <tr>
-                            <td class="tbst-date">181214</td>
-                            <td class="tbst-time">18:20pm</td>
-                            <td class="tbst-content">[장소] {{스터디 장소}}
+                            <td class="tbst-date">{{meeting.date}}</td>
+                            <td class="tbst-time">{{meeting.time}}</td>
+                            <td class="tbst-content">[장소] {{meeting.location}}
                                 <br>
-                                [내용] {{스터디 내용}}
+                                [내용] {{meeting.content}}
                             </td>
                         </tr>
                         </tbody>
@@ -115,22 +137,41 @@
 
                 <!--멤버 관리-->
                 <div class="study-mem">
+                    <legend> 회원 관리 </legend>
                     <!--멤버별-->
                     <div class="mem">
                         <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="mem-img"/>
-                        <div class="mem-content"> <p> 멤버 이름 </p>
-                            <p> 프로그래스 bar 로 기여도와 참여도</p></div>
-                    </div>
-                    <div class="mem">
-                        <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="mem-img"/>
-                        <div class="mem-content">
-                            <p> 멤버 이름 </p>
-                            <p> 프로그래스 bar 로 기여도와 참여도</p>
+                        <div class="mem-content"> <strong> {{user.firstname}} 참여도</strong>
+                            <!--<p> 스터디 참여도</p>-->
+                            <DIV class=progress-small>
+                                <DIV role=progressbar aria-valuenow=10 aria-valuemin=0 class="progress-bar-small progress-bar-s-success" style="WIDTH: 50%" aria-valuemax=100>
+                                    <SPAN class=sr-only>60% Complete</SPAN>
+                                </DIV><!-- Complete -->
+                            </DIV>
                         </div>
                     </div>
                     <div class="mem">
                         <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="mem-img"/>
-                        <div class="mem-content"></div>
+                        <div class="mem-content"> <strong> {{user.firstname}} 참여도</strong>
+                            <!--<p> 스터디 참여도</p>-->
+                            <DIV class=progress-small>
+                                <DIV role=progressbar aria-valuenow=10 aria-valuemin=0 class="progress-bar-small progress-bar-s-success" style="WIDTH: 30%" aria-valuemax=100>
+                                    <SPAN class=sr-only>60% Complete</SPAN>
+                                </DIV><!-- Complete -->
+                            </DIV>
+                        </div>
+                    </div>
+                    <div class="mem">
+                        <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="mem-img"/>
+                        <div class="mem-content">
+                            <strong> {{user.firstname}} 참여도</strong>
+                            <!--<p> 스터디 참여도</p>-->
+                            <DIV class=progress-small>
+                                <DIV role=progressbar aria-valuenow=10 aria-valuemin=0 class="progress-bar-small progress-bar-s-success" style="WIDTH: 60%" aria-valuemax=100>
+                                    <SPAN class=sr-only>60% Complete</SPAN>
+                                </DIV><!-- Complete -->
+                            </DIV>
+                        </div>
                     </div>
                 </div>
             </div><!--/col-9-->
