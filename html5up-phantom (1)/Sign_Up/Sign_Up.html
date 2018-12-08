@@ -49,13 +49,6 @@
         <input type="text" name="signup-id" id="signup-id"placeholder="아이디" />
         <input type="password" name="signup-pwd" id="signup-pwd" placeholder="비밀번호" />
         <input type="password" name="signup-pwd-check" id="signup-pwd-check" placeholder="비밀번호 확인" />
-        <input type="button" name="signup-next" id="signup-next" class="next action-button" value="Next" style="float : right" />
-    </fieldset>
-    <!--회원가입 두번째 단계(이메일 인증)-->
-    <fieldset>
-        <h2 class="fs-title">회원가입</h2>
-        <!--<h3 class="fs-subtitle" style="margin-top:-15px;">둘중 하나의 이메일로 인증하세요.</h3>-->
-        <!--일반인 이메일 인증-->
         <input type="text" name="signup-name" id="signup-name"placeholder="이름" />
         <select name="school" class="form-control-school" >
             <option value="대학교를 선택해주세요" selected="selected" style="width:80%">대학교를 선택해주세요</option>
@@ -64,6 +57,15 @@
             <option value="서강대학교">서강대학교</option>
             <option value="연세대학교">연세대학교</option>
         </select>
+
+        <input type="button" name="signup-next" id="signup-next" class="next action-button" value="Next" style="float : right" />
+    </fieldset>
+    <!--회원가입 두번째 단계(이메일 인증)-->
+    <fieldset>
+        <h2 class="fs-title">회원가입</h2>
+        <!--<h3 class="fs-subtitle" style="margin-top:-15px;">둘중 하나의 이메일로 인증하세요.</h3>-->
+        <!--일반인 이메일 인증-->
+
         <div style="position: relative; left:-100px; top: -20px;">
             <a class="tooltips" href="#"><img src="../images/tooltip.png" style="max-width: 17% ;position:relative"/><span>학교이메일로 인증하시면 같은학교 스터디 모임에 참여하실 수 있습니다!</span></a>
         </div>
