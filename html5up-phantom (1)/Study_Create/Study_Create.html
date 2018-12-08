@@ -11,6 +11,11 @@
     <!--  CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="Study_Create.css">
+
+    <!--js-->
+    <script src="Study_Create.js"></script>
+
+
 </head>
 <body>
 <!--상단 바 공통-->
@@ -72,54 +77,84 @@
     <tr>
         <td class="tg-l2v1"><strong>모집인원</strong></td>
         <td class="tg-95hz">
-                <label style="margin-left:10px; margin-right:auto; font-weight:400;">
-                    <input type="checkbox"> 2~3명
-                </label>
-                <label style="margin-left:30px; margin-right:auto;font-weight:400;">
-                    <input type="checkbox"> 3~4명
-                </label><br>
-                <label style="margin-left:10px; margin-right:auto;font-weight:400;">
-                    <input type="checkbox"> 4~5명
-                </label>
-                <label style="margin-left:30px; margin-right:auto;font-weight:400;">
-                    <input type="checkbox"> 5명이상
-                </label>
+            <div class="checkbox1">
+            <label style="margin-left:10px; margin-right:auto; font-weight:400;">
+                <input type="checkbox" name="chkbox" value="chk1" onclick="check_only(this)">2~3명
+            </label>
+            <label style="margin-left:30px; margin-right:auto;font-weight:400;">
+                <input type="checkbox" name="chkbox" value="chk2" onclick="check_only(this)">3~4명
+            </label>
+            <label style="margin-left:10px; margin-right:auto;font-weight:400;">
+                <input type="checkbox" name="chkbox" value="chk3" onclick="check_only(this)">4~5명
+            </label>
+            <label style="margin-left:30px; margin-right:auto;font-weight:400;">
+                <input type="checkbox" name="chkbox" value="chk4" onclick="check_only(this)">5명이상
+            </label>
+            </div>
         </td>
     </tr>
     <tr>
         <td class="tg-y1ay"><strong>카테고리</strong></td>
         <td class="tg-gqep">
-            <div class="checkbox">
-                <label style="margin-left:10px;">
-                    <input type="checkbox"> 어학
-                </label>
-                <label style="margin-left:43px;">
-                    <input type="checkbox"> 면접
-                </label><br>
-                <label style="margin-left:10px; margin-top:5px;">
-                    <input type="checkbox"> 인적성
-                </label>
-                <label style="margin-left:29px;">
-                    <input type="checkbox"> NCS
-                </label><br>
-                <label style="margin-left:10px; margin-bottom: -7px;margin-top:5px;">
-                    <input type="checkbox"> 기타
-                </label>
-            </div>
+            <select name="school" class="form-control-school" style="width:100%; height:30px;border-radius: 2px;" >
+                <option value="카테고리를 선택해주세요" selected="selected" style="width:100%; font-weight: 100;font-size:11px;">&nbsp카테고리를 선택해주세요</option>
+                <option value="어학"style="font-size:11px;!important;">어학</option>
+                <option value="면접"style="font-size:11px;!important;">인적성</option>
+                <option value="NCS"style="font-size:11px;!important;">NCS</option>
+                <option value="취업"style="font-size:11px;!important;">취업</option>
+                <option value="인턴"style="font-size:11px;!important;">인턴</option>
+                <option value="토론"style="font-size:11px;!important;">토론</option>
+                <option value="코딩"style="font-size:11px;!important;">코딩</option>
+                <option value="산학장학생"style="font-size:11px;!important;">산학장학생</option>
+                <option value="기타"style="font-size:11px;!important;">기타</option>
+
+
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td class="tg-l2v1"><strong>목표 기업</strong></td>
+        <td class="tg-ys40">
+            <select name="school" class="form-control-school" style="width:100%; height:30px;border-radius: 2px;" >
+                <option value="기업 상관없음" selected="selected" style="font-size:11px;width:100%; font-weight: 100;!important;">&nbsp기업 상관없음</option>
+                <option value="삼성"style="font-size:11px;!important;">삼성</option>
+                <option value="LG"style="font-size:11px;!important;">LG</option>
+                <option value="SK"style="font-size:11px;!important;">SK</option>
+                <option value="신세계"style="font-size:11px;!important;">신세계</option>
+            </select>
         </td>
     </tr>
     <tr>
         <td class="tg-l2v1"><strong>모집 학교</strong></td>
         <td class="tg-ys40">
-            <select name="school" class="form-control-school" style="width:100%; height:30px;border-radius: 2px;" >
-                <option value="대학교 상관없음" selected="selected" style="width:100%; font-weight: 100;">&nbsp대학교 상관없음</option>
-                <option value="강원대학교">강원대학교</option>
-                <option value="단국대학교">단국대학교</option>
-                <option value="서강대학교">서강대학교</option>
-                <option value="연세대학교">연세대학교</option>
+            <select name="school" class="form-control-school"  style="width:100%; height:30px;border-radius: 2px;" >
+                <option value="대학교 상관없음" selected="selected" style="font-size:11px; font-weight: 100;!important;">&nbsp대학교 상관없음</option>
+                <option value="강원대학교" style="font-size:11px;!important;">강원대학교</option>
+                <option value="단국대학교"style="font-size:11px;!important;">단국대학교</option>
+                <option value="서강대학교"style="font-size:11px;!important;">서강대학교</option>
+                <option value="연세대학교"style="font-size:11px;!important;">연세대학교</option>
             </select>
         </td>
     </tr>
+    <tr>
+        <td class="tg-l2v1"><strong>스터디 시작 </strong></td>
+        <td class="tg-ys40">
+            <form id="frm" action="action.jsp" style="display: inline-block; margin-top:3px; margin-left:5px;">
+                <div><input type="date" id="userdate" name="userdate"
+                            value="2018-01-01"></div>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td class="tg-l2v1"><strong>스터디 완료 </strong></td>
+        <td class="tg-ys40">
+            <form id="frm2" action="action.jsp" style="display: inline-block; margin-top:3px;margin-left:5px;">
+                <div><input type="date" id="userdate2" name="userdate2"
+                            value="2018-12-25"></div>
+            </form>
+        </td>
+    </tr>
+
     <tr>
         <td class="tg-y1ay"><strong>스터디 설명</strong></td>
         <td class="tg-gqep" ><textarea cols="10" placeholder="내용을 입력하세요. " name="content" class="form-control"style="height:100px;"></textarea>
@@ -129,7 +164,7 @@
 <!--스터디 등록할지 취소할지-->
 <input type="submit" value="등록" onclick="location.href='../home/home.html'" class=" btn1"/>
 <input type="button" value="취소" class=" btn2" onclick="location.href='../home/home.html'"/>
-
+<br><br>
 </body>
 </html>
 
