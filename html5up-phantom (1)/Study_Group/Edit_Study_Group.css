@@ -327,6 +327,8 @@ body.is-menu-visible #menu .close {
 
 #edit-header .mypage-icon .mypage-icon-but img {
     display: block;
+    margin-left: 3em;
+
     width: 100%;
     height: 100%;
     margin-right: -0.8em;
@@ -337,70 +339,6 @@ body.is-menu-visible #menu .close {
 
 
 
-/*.st-category {*/
-/*!*font-size: 20px;*!*/
-/*!*font-weight:900;*!*/
-/*color: #9DD044;*/
-/*margin-bottom: 10px;*/
-/*margin-left:15px;*/
-/*}*/
-/*.st-name{*/
-/*margin-left:10px;*/
-
-
-
-/*}*/
-/*.st-day {*/
-/*!*font-size: 20px;*!*/
-/*!*font-weight:900;*!*/
-/*!*color: #9DD044;*!*/
-/*!*margin-bottom: 10px;*!*/
-/*margin-top:10px;*/
-/*margin-bottom:10px;*/
-/*}*/
-/*.st-people {*/
-
-/*}*/
-/*.st-profile {*/
-/*margin-top:30px;*/
-/*margin-bottom:10px;*/
-/*margin-left:15px;*/
-/*}*/
-/*.st-profile-img {*/
-/*!* class로 세팅하면 이미지 각각을 동그랗게 만드는거가 안됨 ㅜㅜ -> html 각 이미지마다 넣어야 되나봄*!*/
-/*!*margin-left:5px;*!*/
-/*!*border: 1px solid darkgrey;*!*/
-/*!*border-radius: 15px;*!*/
-/*!*-moz-border-radius: 15px;*!*/
-/*!*-webkit-border-radius: 100px;*!*/
-/*}*/
-
-/*.st-speaker{*/
-/*margin-top:0px;*/
-/*margin-bottom:0*/
-/*}*/
-/*table.st-table {*/
-/*border-collapse: separate;*/
-/*border-spacing: 1px;*/
-/*text-align: center;*/
-/*line-height: 1.5;*/
-/*margin: 20px 10px;*/
-/*}*/
-/*table.st-table th {*/
-/*width: 155px;*/
-/*padding: 10px;*/
-/*font-weight: bold;*/
-/*vertical-align: top;*/
-/*color: #fff;*/
-/*background: #ce4869 ;*/
-/*}*/
-/*table.st-table td {*/
-/*width: 155px;*/
-/*padding: 10px;*/
-/*vertical-align: top;*/
-/*border-bottom: 1px solid #ccc;*/
-/*background: #eee;*/
-/*}*/
 
 #studyedit-main{
     /*margin-top : 5em;*/
@@ -445,6 +383,7 @@ body.is-menu-visible #menu .close {
 
 #studyedit-main .study-alarm{
     width :100%;
+    margin-bottom: 50px
     /*padding: 0.5em;*/
     /*margin-top: 2em;*/
 
@@ -472,6 +411,7 @@ body.is-menu-visible #menu .close {
     font-weight: 700;
     color:gray;
     height:2.5em;
+    padding-top:15px;
 }
 .edit-notice-box{
     width: 100%;
@@ -483,20 +423,22 @@ body.is-menu-visible #menu .close {
 #studyedit-main .edit-notice-but {
     width: 6em;
     float: right;
-    height: 3em;
+    /*height: 3em;*/
     background-color: #9dd044;
     box-shadow: none;
     border-radius: 5px;
+    border: 1px solid #9DD044;
     /* padding-bottom: 0px; */
-    font-size: 13px;
+    font-size: 10px;
     font-weight: 800;
-    /*margin-top: 10px;*/
+    margin-top: 10px;
     text-align: center;
 }
 
 #studyedit-main .study-sche{
     margin-top: -1em;
     width:100%;
+    margin-bottom:58px;
 }
 #studyedit-main .study-sche table td{
     padding:0.5em ;
@@ -537,18 +479,25 @@ body.is-menu-visible #menu .close {
     font-size: 15px;
 
 }
-.study-sche legend{
+#studyedit-main .study-sche legend{
     font-size: 20px;
     font-weight: 700;
-    color:gray
+    color:gray;
+    height:2.5em;
+    padding-top:15px;
+
 }
-.study-mem legend{
+#studyedit-main .study-mem legend{
     font-size: 20px;
     font-weight: 700;
     color:gray
 }
 .mem{
     margin: 1em 0.5em;
+    padding-bottom: 12px;
+
+    border-bottom: 1px solid lightgrey;
+
 }
 .mem img{
     width : 60px;
@@ -556,15 +505,15 @@ body.is-menu-visible #menu .close {
     border-radius: 50px;
 }
 
-.mem-content{
+#studyedit-main .mem-content{
     float: right;
     width: 77%;
-    margin-top: 5px;
+    /*margin-top: 5px;*/
 }
-.mem-content strong{
+#studyedit-main .mem-content strong{
     font-size: 15px;
 }
-.mypage-icon-but2{
+#studyedit-main .mypage-icon-but2{
     margin : 0
 }
 
@@ -637,4 +586,29 @@ body.is-menu-visible #menu .close {
 #studyedit-main .meet-content{
     padding:10px;
     height :7em;
+}
+
+#studyedit-main .attendance{
+    margin-top:5px;
+}
+#studyedit-main .att-but{
+    box-shadow: none;
+    /* width: 5em; */
+    border-radius: 5px;
+    font-size: 10px;
+    border: 2px solid #9dd044;
+    color: #9dd044!important;
+    font-weight: 800;
+    text-align: center;
+}
+
+#studyedit-main .att-but2{
+    box-shadow: none;
+    /* width: 5em; */
+    border-radius: 5px;
+    font-size: 10px;
+    border: 2px solid darkred;
+    color: darkred!important;
+    font-weight: 800;
+    text-align: center;
 }
