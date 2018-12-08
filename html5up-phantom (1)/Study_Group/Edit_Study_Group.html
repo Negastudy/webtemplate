@@ -65,11 +65,11 @@
             </div>
             <div class="study-name">
                 {{study.name}}
-                {% if complete %}
-                <span style="background-color: rgb(246, 246, 246); color: rgb(102, 102, 102); border-color: rgb(216, 216, 216); font-weight:700;font-size: 0.7em">종료</span>
-                {% else %}
-                <span style="color:#9dd044; font-size: 0.7em; font-weight:700;">진행중</span>
-                {% endif %}
+                <!--{% if complete %}-->
+                <!--<span style="background-color: rgb(246, 246, 246); color: rgb(102, 102, 102); border-color: rgb(216, 216, 216); font-weight:700;font-size: 0.7em">종료</span>-->
+                <!--{% else %}-->
+                <!--<span style="color:#9dd044; font-size: 0.7em; font-weight:700;">진행중</span>-->
+                <!--{% endif %}-->
             </div>
 
             <!--다음 일정 날짜-->
@@ -81,9 +81,9 @@
             <div class="study-alarm">
                 <!--<img src="../images/group-announce.png">-->
                 <form action="/edit_notice" method="post">
-                    <legend>공지 등록</legend>
+                    <legend>공지 등록<input type="submit" value="등록" class="edit-notice-but" style="color:#ffffff!important;"/>
+                    </legend>
                     <textarea name="notice" class="edit-notice-box" placeholder="공지를 입력하세요."></textarea>
-                    <input type="submit" value="등록" class="edit-notice-but"/>
                 </form>
                 <!--<p>자소서 필참 질문 10개</p>-->
                 <!--<p>1분 자기소개 2가지 준비</p>-->
@@ -91,44 +91,28 @@
 
             <!--그동안의 일정-->
             <div class="study-sche">
-                <legend> 일정 관리 </legend>
-                <table>
-                    <tbody>
-                    <tr><td>
-                        <p style="font-weight: 800; font-size: 20px; text-align: center; color:darkgray">
-                            일정 없음
-                        </p></td>
+                <legend> 일정 등록 </legend>
 
-                    </tr>
-                    </tbody>
-                </table>
                 <table>
                     <tbody>
                     <!--여기다가 for 문-->
                     <!--tr은 행한 줄 td는 한 열-->
                     <tr>
-                        <td class="tbst-date">{{meeting.date}}</td>
-                        <td class="tbst-time">{{meeting.time}}</td>
-                        <td class="tbst-content">[장소] {{meeting.location}}
-                            <br>
-                            [내용] {{meeting.content}}
+                       <td class="meet-loc-title"> 장소 </td>
+                        <td><input type="text" class="meet-loc" placeholder="장소 입력">
                         </td>
                     </tr>
                     <tr>
-                        <td class="tbst-date">{{meeting.date}}</td>
-                        <td class="tbst-time">{{meeting.time}}</td>
-                        <td class="tbst-content">[장소] {{meeting.location}}
-                            <br>
-                            [내용] {{meeting.content}}
-                        </td>
+                        <td class="meet-date-title"> 날짜 </td>
+                        <td><input type="date" class="meet-date" >
                     </tr>
                     <tr>
-                        <td class="tbst-date">{{meeting.date}}</td>
-                        <td class="tbst-time">{{meeting.time}}</td>
-                        <td class="tbst-content">[장소] {{meeting.location}}
-                            <br>
-                            [내용] {{meeting.content}}
-                        </td>
+                        <td class="meet-time-title"> 시간 </td>
+                        <td><input type="time" class="meet-time" >
+                    </tr>
+                    <tr>
+                        <td class="meet-content-title"> 내용 </td>
+                        <td><textarea name="content" placeholder="스터디 내용 입력" class="meet-content" ></textarea>
                     </tr>
                     </tbody>
                 </table>
