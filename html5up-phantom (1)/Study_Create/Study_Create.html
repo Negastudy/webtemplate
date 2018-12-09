@@ -63,6 +63,7 @@
 
 
 <!--스터디 생성 테이블-->
+<form>
 <table class="tg" style="table-layout: fixed; width: 95%; margin-left:auto;margin-right:auto;border: 2px solid #9dd044;">
     <colgroup>
         <col style="width: 30%">
@@ -70,8 +71,8 @@
     </colgroup>
     <tr>
         <td class="tg-y1ay"><strong>스터디 이름</strong></td>
-        <td class="tg-hr1k">
-            <input type="text" placeholder="스터디 이름을 입력하세요. " name="subject" class="form-control"/>
+        <td class="tg-hr1k" >
+            <input type="text"  placeholder="스터디 이름을 입력하세요. " name="subject" class="form-control"/>
         </td>
     </tr>
     <tr>
@@ -79,16 +80,16 @@
         <td class="tg-95hz">
             <div class="checkbox1">
             <label style="margin-left:10px; margin-right:auto; font-weight:400;">
-                <input type="checkbox" name="chkbox" value="chk1" onclick="check_only(this)">2~3명
+                <input type="checkbox" name="chkbox1" value="chk1" onclick="check_only(this)">2~3명
             </label>
             <label style="margin-left:30px; margin-right:auto;font-weight:400;">
-                <input type="checkbox" name="chkbox" value="chk2" onclick="check_only(this)">3~4명
+                <input type="checkbox" name="chkbox2" value="chk2" onclick="check_only(this)">3~4명
             </label>
             <label style="margin-left:10px; margin-right:auto;font-weight:400;">
-                <input type="checkbox" name="chkbox" value="chk3" onclick="check_only(this)">4~5명
+                <input type="checkbox" name="chkbox3" value="chk3" onclick="check_only(this)">4~5명
             </label>
             <label style="margin-left:30px; margin-right:auto;font-weight:400;">
-                <input type="checkbox" name="chkbox" value="chk4" onclick="check_only(this)">5명이상
+                <input type="checkbox" name="chkbox4" value="chk4" onclick="check_only(this)">5명이상
             </label>
             </div>
         </td>
@@ -96,7 +97,7 @@
     <tr>
         <td class="tg-y1ay"><strong>카테고리</strong></td>
         <td class="tg-gqep">
-            <select name="school" class="form-control-school" style="width:100%; height:30px;border-radius: 2px;" >
+            <select name="category" class="form-control-school" style="width:100%; height:30px;border-radius: 2px;" >
                 <option value="카테고리를 선택해주세요" selected="selected" style="width:100%; font-weight: 100;font-size:11px;">&nbsp카테고리를 선택해주세요</option>
                 <option value="어학"style="font-size:11px;!important;">어학</option>
                 <option value="면접"style="font-size:11px;!important;">인적성</option>
@@ -107,15 +108,13 @@
                 <option value="코딩"style="font-size:11px;!important;">코딩</option>
                 <option value="산학장학생"style="font-size:11px;!important;">산학장학생</option>
                 <option value="기타"style="font-size:11px;!important;">기타</option>
-
-
             </select>
         </td>
     </tr>
     <tr>
         <td class="tg-l2v1"><strong>목표 기업</strong></td>
         <td class="tg-ys40">
-            <select name="school" class="form-control-school" style="width:100%; height:30px;border-radius: 2px;" >
+            <select name="company" class="form-control-school" style="width:100%; height:30px;border-radius: 2px;" >
                 <option value="기업 상관없음" selected="selected" style="font-size:11px;width:100%; font-weight: 100;!important;">&nbsp기업 상관없음</option>
                 <option value="삼성"style="font-size:11px;!important;">삼성</option>
                 <option value="LG"style="font-size:11px;!important;">LG</option>
@@ -164,7 +163,8 @@
 <!--스터디 등록할지 취소할지-->
 <input type="submit" value="등록" onclick="location.href='../home/home.html'" class=" btn1"/>
 <input type="button" value="취소" class=" btn2" onclick="location.href='../home/home.html'"/>
-<br><br>
+</form>
+    <br><br>
 </body>
 </html>
 
