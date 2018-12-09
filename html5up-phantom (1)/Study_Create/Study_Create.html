@@ -10,6 +10,7 @@
     <title>NegaStudy</title>
     <!--  CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <link rel="stylesheet" href="Study_Create.css">
 
     <!--js-->
@@ -63,7 +64,7 @@
 
 
 <!--스터디 생성 테이블-->
-<form>
+<form action="" method="post">
 <table class="tg" style="table-layout: fixed; width: 95%; margin-left:auto;margin-right:auto;border: 2px solid #9dd044;">
     <colgroup>
         <col style="width: 30%">
@@ -98,6 +99,7 @@
         <td class="tg-y1ay"><strong>카테고리</strong></td>
         <td class="tg-gqep">
             <select name="category" class="form-control-school" style="width:100%; height:30px;border-radius: 2px;" >
+                <!--<optgroup style="max-height: 65px;max-width:200px;!important;" label="hi">-->
                 <option value="카테고리를 선택해주세요" selected="selected" style="width:100%; font-weight: 100;font-size:11px;">&nbsp카테고리를 선택해주세요</option>
                 <option value="어학"style="font-size:11px;!important;">어학</option>
                 <option value="면접"style="font-size:11px;!important;">인적성</option>
@@ -108,6 +110,7 @@
                 <option value="코딩"style="font-size:11px;!important;">코딩</option>
                 <option value="산학장학생"style="font-size:11px;!important;">산학장학생</option>
                 <option value="기타"style="font-size:11px;!important;">기타</option>
+                <!--</optgroup>-->
             </select>
         </td>
     </tr>
