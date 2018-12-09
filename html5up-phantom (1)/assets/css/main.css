@@ -3422,7 +3422,8 @@ input, select, textarea {
 	/*margin-top:400px;*/
 	width :95%;
 	heignt:3em;
-	margin: 0em 0.5em -2em 0.5em;
+	margin: 1em 0.5em -2em 0.5em;
+	/*margin: 0em 0.5em -2em 0.5em;*/
 	background-color: #9dd400 ;
 	box-shadow: none;
 	border-radius : 5px;
