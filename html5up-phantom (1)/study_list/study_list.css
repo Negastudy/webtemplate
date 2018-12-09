@@ -363,7 +363,8 @@ body.is-menu-visible #menu .close {
 .list-background{
     width:100%;
     height:100%;
-    padding-top:10px;
+    /*padding-top:10px;*/
+    /*background-color: #ededed;*/
 }
 
 .list-box{
@@ -390,7 +391,7 @@ body.is-menu-visible #menu .close {
 }
 
 #studylist-search{
-    margin-top: -4.5em;
+     margin-top: -4.5em;
     width: 100%;
     height: 4.3em;
     background-color: white;

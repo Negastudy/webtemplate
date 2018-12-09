@@ -7,7 +7,7 @@
 
 <!--css-->
 <link rel="stylesheet" href="../assets/css/main.css" />
-<link rel="stylesheet" href="study_list.css">
+<link rel="stylesheet" href="../study_list/study_list.css">
 
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css-411">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
@@ -42,7 +42,7 @@
             <!-- Logo -->
             <a href="../home/home.html" class="logo">
 				<span class="symbol" >
-					<img src="../images/로고_전구.png" alt="" />
+                        <img src="../images/로고_전구.png" alt="" />
 				</span>
                 <span class="title" style="font-size: 1.3em; color: #585858;">NEGASTUDY</span>
             </a>
@@ -50,7 +50,7 @@
             <!-- Nav -->
             <a href="../My_Page/mypage.html" class="mypage-icon">
 				<span class="mypage-icon-but">
-					<img src="../images/mypage_icon.png" style="width:2.5em; height:2em"/>
+                        <img src="../images/mypage_icon.png" style="width:2.5em; height:2em"/>
 
 				</span>
             </a>
@@ -66,54 +66,32 @@
     <div class="row">
         <div class="col-sm-3" style="height:100%;margin-top:10em;background-color: #ededed">
 
-            <!--검색창-->
             <header>
-                <div id="studylist-search">
-                    <input type="text" name="search" class="search-box" placeholder="  스터디 검색">
-                    <button class="search-but">
-                        <img style="width:100%; height: inherit " src="../images/main_search.png">
-                    </button>
-                </div>
+                <form action="" method="get" style="overflow-x: inherit">
+                    <div id="studylist-search">
+                        <input type="text" name="q" value="{{ q }}" class="search-box" placeholder="스터디 검색">
+                        <button class="search-but" type="submit">
+                            <img style="width:100%; height: inherit " src="../images/main_search.png">
+                        </button>
+                    </div>
+                </form>
             </header>
 
-            <div class="list-background">
-
-                <!--스터디 리스트 반복문-->
-                <!--
-                    <% for  in   %>
-                -->
-                <div onclick="" class="list-box">
-                    <div class="list-box-content">
-                        [#삼성 GSAT] <br>
-                        한방에 완성할 스터디
-                    </div>
-                    <div class="list-box-click">
-                        <img src="../images/studylist-next.png">
+            {% for s in list %}
+            <a href="{{ post.get_absolute_url }}">
+                <div class="list-background">
+                    <div class="list-box">
+                        <div class="list-box-content">
+                            {{ s.name }}
+                        </div>
+                        <div class="list-box-click">
+                            <img src="../images/studylist-next.png">
+                        </div>
                     </div>
                 </div>
 
-                <div class="list-box">
-                    <div class="list-box-content">
-                        [ {{카데고리}} ] <br>
-                        {{ study.name }}
-
-                    </div>
-                    <div class="list-box-click">
-                        <img src="../images/studylist-next.png">
-                    </div>
-                </div>
-
-                <div class="list-box">
-                    <div class="list-box-content">
-                        [ {{카데고리}} ] <br>
-                        {{ study.name }}
-                    </div>
-                    <div class="list-box-click">
-                        <img src="../images/studylist-next.png">
-                    </div>
-                </div>
-            </div>
-
+            </a>
+            {% endfor %}
         </div>
     </div>
 
@@ -128,3 +106,133 @@
 
 </body>
 </html>
+<!--<!DOCTYPE HTML>-->
+<!--&lt;!&ndash;-->
+	<!--Phantom by HTML5 UP-->
+	<!--html5up.net | @ajlkn-->
+	<!--Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)-->
+<!--&ndash;&gt;-->
+
+<!--&lt;!&ndash;css&ndash;&gt;-->
+<!--<link rel="stylesheet" href="../assets/css/main.css" />-->
+<!--<link rel="stylesheet" href="study_list.css">-->
+
+<!--<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css-411">-->
+<!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>-->
+<!--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+
+<!--&lt;!&ndash;&#45;&#45;&#45;&#45; Include the above in your HEAD tag &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+
+
+<!--<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css-400">-->
+<!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>-->
+<!--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+
+<!--&lt;!&ndash;&#45;&#45;&#45;&#45; Include the above in your HEAD tag &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+<!--<html>-->
+
+<!--<head>-->
+    <!--<title>NEGASTUDY</title>-->
+    <!--<meta charset="utf-8" />-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />-->
+
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+
+<!--</head>-->
+
+<!--<body>-->
+<!--<div id="studylist-wrapper">-->
+    <!--<header id="studylist-header">-->
+        <!--<div class="inner">-->
+
+            <!--&lt;!&ndash; Logo &ndash;&gt;-->
+            <!--<a href="../home/home.html" class="logo">-->
+				<!--<span class="symbol" >-->
+					<!--<img src="../images/로고_전구.png" alt="" />-->
+				<!--</span>-->
+                <!--<span class="title" style="font-size: 1.3em; color: #585858;">NEGASTUDY</span>-->
+            <!--</a>-->
+
+            <!--&lt;!&ndash; Nav &ndash;&gt;-->
+            <!--<a href="../My_Page/mypage.html" class="mypage-icon">-->
+				<!--<span class="mypage-icon-but">-->
+					<!--<img src="../images/mypage_icon.png" style="width:2.5em; height:2em"/>-->
+
+				<!--</span>-->
+            <!--</a>-->
+
+        <!--</div>-->
+    <!--</header>-->
+
+<!--</div>-->
+
+
+<!--&lt;!&ndash;main&ndash;&gt;-->
+<!--<div id="studylist-main" class="container bootstrap snippet">-->
+    <!--<div class="row">-->
+        <!--<div class="col-sm-3" style="height:100%;margin-top:10em;background-color: #ededed">-->
+
+            <!--&lt;!&ndash;검색창&ndash;&gt;-->
+            <!--<header>-->
+                <!--<div id="studylist-search">-->
+                    <!--<input type="text" name="search" class="search-box" placeholder="  스터디 검색">-->
+                    <!--<button class="search-but">-->
+                        <!--<img style="width:100%; height: inherit " src="../images/main_search.png">-->
+                    <!--</button>-->
+                <!--</div>-->
+            <!--</header>-->
+
+            <!--<div class="list-background">-->
+
+                <!--&lt;!&ndash;스터디 리스트 반복문&ndash;&gt;-->
+                <!--&lt;!&ndash;-->
+                    <!--<% for  in   %>-->
+                <!--&ndash;&gt;-->
+                <!--<div onclick="" class="list-box">-->
+                    <!--<div class="list-box-content">-->
+                        <!--[#삼성 GSAT] <br>-->
+                        <!--한방에 완성할 스터디-->
+                    <!--</div>-->
+                    <!--<div class="list-box-click">-->
+                        <!--<img src="../images/studylist-next.png">-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="list-box">-->
+                    <!--<div class="list-box-content">-->
+                        <!--[ {{카데고리}} ] <br>-->
+                        <!--{{ study.name }}-->
+
+                    <!--</div>-->
+                    <!--<div class="list-box-click">-->
+                        <!--<img src="../images/studylist-next.png">-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="list-box">-->
+                    <!--<div class="list-box-content">-->
+                        <!--[ {{카데고리}} ] <br>-->
+                        <!--{{ study.name }}-->
+                    <!--</div>-->
+                    <!--<div class="list-box-click">-->
+                        <!--<img src="../images/studylist-next.png">-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+        <!--</div>-->
+    <!--</div>-->
+
+<!--</div>-->
+
+<!--&lt;!&ndash; Scripts &ndash;&gt;-->
+<!--<script src="../assets/js/jquery.min.js"></script>-->
+<!--<script src="../assets/js/browser.min.js"></script>-->
+<!--<script src="../assets/js/breakpoints.min.js"></script>-->
+<!--<script src="../assets/js/util.js"></script>-->
+<!--<script src="../assets/js/main.js"></script>-->
+
+<!--</body>-->
+<!--</html>-->
