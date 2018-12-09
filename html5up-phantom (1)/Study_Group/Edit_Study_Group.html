@@ -72,195 +72,91 @@
                 <!--{% endif %}-->
             </div>
 
-            <!--다음 일정 날짜-->
-            <!--<div class="next-meeting-date">-->
-                <!--<img src="../images/group-cal.png"/>-->
-                <!--<P>다음 일정 : 18-12-28 잠원동 토즈</P>-->
-            <!--</div>-->
-            <!--공지사항 -->
-            <div class="study-alarm">
-                <!--<img src="../images/group-announce.png">-->
-                <!--<form action="/edit_notice" method="post">-->
-                    <legend>공지 사항
-                    </legend>
-                    <textarea name="notice" class="edit-notice-box" placeholder="공지를 입력하세요."></textarea>
-                    <input name="study_notice" type="submit" value="등록" class="edit-notice-but" style="font-weight:800!important;color:#ffff!important;"/>
-                <!--</form>-->
-                <!--<p>자소서 필참 질문 10개</p>-->
-                <!--<p>1분 자기소개 2가지 준비</p>-->
-            </div>
 
-            <!--그동안의 일정-->
-            <div class="study-sche">
-                <legend> 일정
-                    </legend>
+            <form action="/" method="post">
+                <!--공지사항 -->
+                <div class="study-alarm">
+                    <!--<img src="../images/group-announce.png">-->
+                    <!--<form action="/edit_notice" method="post">-->
+                        <legend>공지 사항
+                        </legend>
+                        <textarea name="notice" class="edit-notice-box" placeholder="공지를 입력하세요."></textarea>
+                        <input name="study_notice" type="submit" value="등록" class="edit-notice-but" style="font-weight:800!important;color:#ffff!important;"/>
+                    <!--</form>-->
+                    <!--<p>자소서 필참 질문 10개</p>-->
+                    <!--<p>1분 자기소개 2가지 준비</p>-->
+                </div>
 
-                <table>
-                    <tbody>
-                    <!--여기다가 for 문-->
-                    <!--tr은 행한 줄 td는 한 열-->
-                    <tr>
-                       <td class="meet-loc-title"> 장소 </td>
-                        <td><input type="text" class="meet-loc" placeholder="장소 입력">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="meet-date-title"> 날짜 </td>
-                        <td><input type="date" class="meet-date" >
-                    </tr>
-                    <tr>
-                        <td class="meet-time-title"> 시간 </td>
-                        <td><input type="time" class="meet-time" >
-                    </tr>
-                    <tr>
-                        <td class="meet-content-title"> 내용 </td>
-                        <td><textarea name="content" placeholder="스터디 내용 입력" class="meet-content" ></textarea>
-                    </tr>
-                    </tbody>
-                </table>
-                <input name="meeting_schedule" type="submit" value="등록" class="edit-notice-but" style="margin-top:-10px;color:#fff!important;"/>
-            </div>
+                <!--그동안의 일정-->
+                <div class="study-sche">
+                    <legend> 일정 </legend>
 
-            <!--멤버 관리-->
-            <div class="study-mem">
-                <legend> 회원 관리 </legend>
-                <!--멤버별-->
-                <div class="mem">
-                    <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="mem-img"/>
-                    <div class="mem-content"> <strong> {{username}}</strong>
-                        <!--<p> 스터디 참여도</p>-->
-                        <DIV class="attendance">
-                            <button class="att-but">출석</button>
-                            <button class="att-but2">결석</button>
-                        </DIV>
+                    <table>
+                        <tbody>
+                        <!--여기다가 for 문-->
+                        <!--tr은 행한 줄 td는 한 열-->
+                        <tr>
+                           <td class="meet-loc-title"> 장소 </td>
+                            <td><input ma,etype="text" class="meet-loc" placeholder="장소 입력">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="meet-date-title"> 날짜 </td>
+                            <td><input name="meet-date" type="date" class="meet-date" >
+                        </tr>
+                        <tr>
+                            <td class="meet-time-title"> 시간 </td>
+                            <td><input name="meet-time "type="time" class="meet-time" >
+                        </tr>
+                        <tr>
+                            <td class="meet-content-title"> 내용 </td>
+                            <td><textarea name="meet-content" placeholder="스터디 내용 입력" class="meet-content" ></textarea>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <input name="meeting_schedule" type="submit" value="등록" class="edit-notice-but" style="margin-top:-10px;color:#fff!important;"/>
+                </div>
+
+                <!--멤버 관리-->
+                <div class="study-mem">
+                    <legend> 회원 관리 </legend>
+                    <!--멤버별-->
+                    <div class="mem">
+                        <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="mem-img"/>
+                        <div class="mem-content"><strong> {{username}}</strong>
+                            <!--<p> 스터디 참여도</p>-->
+                            <DIV class="attendance">
+                                <button class="att-but">출석</button>
+                                <button class="att-but2">결석</button>
+                            </DIV>
+                        </div>
+                    </div>
+                    <div class="mem">
+                        <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="mem-img"/>
+                        <div class="mem-content"> <strong> {{username}} </strong>
+                            <!--<p> 스터디 참여도</p>-->
+                            <DIV class="attendance">
+                                <button class="att-but">출석</button>
+                                <button class="att-but2">결석</button>
+                            </DIV>
+                        </div>
+                    </div>
+                    <div class="mem">
+                        <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="mem-img"/>
+                        <div class="mem-content">
+                            <strong> {{username}}</strong>
+                            <!--<p> 스터디 참여도</p>-->
+                            <DIV class="attendance">
+                                <button class="att-but">출석</button>
+                                <button class="att-but2">결석</button>
+                            </DIV>
+                        </div>
                     </div>
                 </div>
-                <div class="mem">
-                    <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="mem-img"/>
-                    <div class="mem-content"> <strong> {{username}} </strong>
-                        <!--<p> 스터디 참여도</p>-->
-                        <DIV class="attendance">
-                            <button class="att-but">출석</button>
-                            <button class="att-but2">결석</button>
-                        </DIV>
-                    </div>
-                </div>
-                <div class="mem">
-                    <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="mem-img"/>
-                    <div class="mem-content">
-                        <strong> {{username}}</strong>
-                        <!--<p> 스터디 참여도</p>-->
-                        <DIV class="attendance">
-                            <button class="att-but">출석</button>
-                            <button class="att-but2">결석</button>
-                        </DIV>
-                    </div>
-                </div>
-            </div>
+            </form>
         </div><!--/col-9-->
     </div><!--/row-->
-    <!--&lt;!&ndash;스터디 카테고리&ndash;&gt;-->
-    <!--<div class="st-category">-->
-    <!--<h4 >#인적성</h4>-->
-    <!--</div>-->
-
-    <!--&lt;!&ndash;스터디 이름&ndash;&gt;-->
-    <!--<div class="st-name">-->
-    <!--<H1>삼성전자 GSAT 스터디 </H1>-->
-    <!--</div>-->
-    <!--&lt;!&ndash;hr은 빼도됨 // 디자인상 넣는게 좋은가 안좋은가&ndash;&gt;-->
-    <!--<hr>-->
-
-    <!--&lt;!&ndash;스터디 일정&ndash;&gt;-->
-    <!--<div class="st-calender">-->
-    <!--<img style="margin-left:15px; display:inline-block" src="../assets/img/icon/st_day_icon.png" width="10px" height="10px" alt="calender" />-->
-    <!--<h5 class="st-day" style="display:inline-block"> [다음 스터디 일정] 2018.12.15 잠실 토즈 카페 </h5><br>-->
-    <!--</div>-->
-
-    <!--&lt;!&ndash;스터디 공지사항&ndash;&gt;-->
-    <!--<div class = "st-speaker">-->
-    <!--<img style="margin-left:15px; display:inline-block" src="../assets/img/icon/st_speaker.png" class="st_speaker" width="10px" height="10px" alt="speaker" />-->
-    <!--<h5 class="st-speaker" style="display:inline-block"> 자소서 정독 후 질문 10개씩 만들기  </h5>-->
-    <!--</div>-->
-    <!--<div class = "st-speaker">-->
-    <!--<img style="margin-left:15px; display:inline-block" src="../assets/img/icon/st_speaker.png" class="st_speaker" width="10px" height="10px" alt="speaker" />-->
-    <!--<h5 class="st-speaker" style="display:inline-block"> 해커스 NCS 150문제 50분   </h5>-->
-    <!--</div>-->
-
-    <!--&lt;!&ndash;일정&ndash;&gt;-->
-    <!--<table class="st-table">-->
-    <!--<thead>-->
-    <!--<tr>-->
-    <!--<th scope="cols">날짜</th>-->
-    <!--<th scope="cols">시간</th>-->
-    <!--<th scope="cols">장소</th>-->
-    <!--<th scope="cols">내용</th>-->
-    <!--</tr>-->
-    <!--</thead>-->
-    <!--<tbody>-->
-    <!--<tr>-->
-    <!--<td></td>-->
-    <!--<td></td>-->
-    <!--<td></td>-->
-    <!--<td></td>-->
-    <!--</tr>-->
-    <!--<tr>-->
-    <!--<td></td>-->
-    <!--<td></td>-->
-    <!--<td></td>-->
-    <!--<td></td>-->
-    <!--</tr>-->
-    <!--<tr>-->
-    <!--<td></td>-->
-    <!--<td></td>-->
-    <!--<td></td>-->
-    <!--<td></td>-->
-    <!--</tr>-->
-    <!--<tr>-->
-    <!--<td></td>-->
-    <!--<td></td>-->
-    <!--<td></td>-->
-    <!--<td></td>-->
-    <!--</tr>-->
-    <!--</tbody>-->
-    <!--</table>-->
-    <!--&lt;!&ndash;hr은 빼도됨 // 디자인상 넣는게 좋은가 안좋은가&ndash;&gt;-->
-    <!--<hr>-->
-    <!--&lt;!&ndash;스터디원 프로필 사진 수평 배치&ndash;&gt;-->
-    <!--<div class="st-people">-->
-    <!--<div class="st-profile" style="display:inline-block">-->
-    <!--<div class="st-profile-img">-->
-    <!--<img style="margin-left:5px;border: 1px solid darkgrey;border-radius: 15px;-moz-border-radius: 15px;-webkit-border-radius: 100px;"-->
-    <!--src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" width="50px" height="50px" alt="avatar"/>-->
-    <!--</div>-->
-    <!--<p>-->
-    <!--김태근-->
-    <!--</div>-->
-    <!--<div class="st-profile" style="display:inline-block">-->
-    <!--<div class="st-profile-img">-->
-    <!--<img style="margin-left:5px;border: 1px solid darkgrey;border-radius: 15px;-moz-border-radius: 15px;-webkit-border-radius: 100px;"-->
-    <!--src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" width="50px" height="50px" alt="avatar"/>-->
-    <!--</div>-->
-    <!--<p>-->
-    <!--김하연-->
-    <!--</div>-->
-    <!--<div class="st-profile" style="display:inline-block">-->
-    <!--<div class="st-profile-img">-->
-    <!--<img style="margin-left:5px;border: 1px solid darkgrey;border-radius: 15px;-moz-border-radius: 15px;-webkit-border-radius: 100px;"-->
-    <!--src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" width="50px" height="50px" alt="avatar"/>-->
-    <!--</div>-->
-    <!--<p>-->
-    <!--하석진-->
-    <!--</div>-->
-    <!--<div class="st-profile" style="display:inline-block">-->
-    <!--<div class="st-profile-img">-->
-    <!--<img style="margin-left:5px;border: 1px solid darkgrey;border-radius: 15px;-moz-border-radius: 15px;-webkit-border-radius: 100px;"-->
-    <!--src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" width="50px" height="50px" alt="avatar"/>-->
-    <!--</div>-->
-    <!--<p>-->
-    <!--석혜경-->
-    <!--</div>-->
-    <!--</div>-->
+    
 </div>
 </body>
 </html>
