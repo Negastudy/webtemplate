@@ -65,11 +65,7 @@
             </div>
             <div class="study-name">
                 {{study.name}}
-                <!--{% if complete %}-->
-                <!--<span style="background-color: rgb(246, 246, 246); color: rgb(102, 102, 102); border-color: rgb(216, 216, 216); font-weight:700;font-size: 0.7em">종료</span>-->
-                <!--{% else %}-->
-                <!--<span style="color:#9dd044; font-size: 0.7em; font-weight:700;">진행중</span>-->
-                <!--{% endif %}-->
+
             </div>
 
 
@@ -81,7 +77,7 @@
                         <legend>공지 사항
                         </legend>
                         <textarea name="notice" class="edit-notice-box" placeholder="공지를 입력하세요."></textarea>
-                        <input name="study_notice" type="submit" value="등록" class="edit-notice-but" style="font-weight:800!important;color:#ffff!important;"/>
+                        <!--<input name="study_notice" type="submit" value="등록" class="edit-notice-but" style="font-weight:800!important;color:#ffff!important;"/>-->
                     <!--</form>-->
                     <!--<p>자소서 필참 질문 10개</p>-->
                     <!--<p>1분 자기소개 2가지 준비</p>-->
@@ -114,7 +110,7 @@
                         </tr>
                         </tbody>
                     </table>
-                    <input name="meeting_schedule" type="submit" value="등록" class="edit-notice-but" style="margin-top:-10px;color:#fff!important;"/>
+                    <!--<input name="meeting_schedule" type="submit" value="등록" class="edit-notice-but" style="margin-top:-10px;color:#fff!important;"/>-->
                 </div>
 
                 <!--멤버 관리-->
@@ -153,10 +149,13 @@
                         </div>
                     </div>
                 </div>
+
+                <input type="submit" value="저장" class="submit-but"
+                       style=" color:#fff !important;font-size:15px!important;font-weight: 800!important;">
             </form>
         </div><!--/col-9-->
     </div><!--/row-->
-    
+
 </div>
 </body>
 </html>

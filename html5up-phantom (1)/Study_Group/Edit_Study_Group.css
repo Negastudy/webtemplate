@@ -383,7 +383,7 @@ body.is-menu-visible #menu .close {
 
 #studyedit-main .study-alarm{
     width :100%;
-    margin-bottom: 50px
+    margin-bottom: 25px
     /*padding: 0.5em;*/
     /*margin-top: 2em;*/
 
@@ -438,7 +438,7 @@ body.is-menu-visible #menu .close {
 #studyedit-main .study-sche{
     margin-top: -1em;
     width:100%;
-    margin-bottom:58px;
+    margin-bottom:25px;
 }
 #studyedit-main .study-sche table td{
     padding:0.5em ;
@@ -611,4 +611,13 @@ body.is-menu-visible #menu .close {
     color: darkred!important;
     font-weight: 800;
     text-align: center;
+}
+#studyedit-main .submit-but{
+    width: 100%;
+    background-color: #9dd044;
+    box-shadow: none;
+    border-radius: 5px;
+    margin-top:5px;
+
+
 }
